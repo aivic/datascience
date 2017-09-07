@@ -340,3 +340,9 @@ import pandas as pd
 #
 ## Reading from excel file
 #print(pd.read_excel('files/pd_df.xlsx', 'Sheet1'))
+
+
+
+
+## References
+## https://pandas.pydata.org/pandas-docs/stable/10min.html retrieved on September 7, 2017
