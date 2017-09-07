@@ -84,7 +84,13 @@ tmp = sp.call('cls',shell=True)
 #from sklearn.metrics import accuracy_score
 #from sklearn import tree
 #
-#df = pd.read_excel('files/decision_tree.xlsx')
+#df = pd.read_excel('files/decision_tree.xlsx') #Use below link to generate decision_tree.xlsx 
+
+### File avail. at given link
+### df = pd.read_csv(
+### 'https://archive.ics.uci.edu/ml/machine-learning-databases/balance-scale/balance-scale.data',
+###                           sep= ',', header= None)
+
 ##print(df.info)
 ##
 #X = df.values[:, 1:5]   # Other features
@@ -198,6 +204,8 @@ tmp = sp.call('cls',shell=True)
 #
 #
 #df = pd.read_excel('files/kmeans.xlsx')
+### Use given link to form kmeans.xlsx
+### https://raw.githubusercontent.com/datascienceinc/learn-data-science/master/Introduction-to-K-means-Clustering/Data/data_1024.csv
 ##print(df.info)
 #
 #
@@ -350,3 +358,13 @@ tmp = sp.call('cls',shell=True)
 #    plot_gallery(name, components_[:n_components])
 #
 #plt.show()
+
+
+
+## references
+## [1] Linear regression. http://bigdata-madesimple.com/how-to-run-linear-regression-in-python-scikit-learn/ retrieved on September 7, 2017
+## [2] Decision tree. http://dataaspirant.com/2017/02/01/decision-tree-algorithm-python-with-scikit-learn/ retrieved on September 7, 2017
+## [3] Random Forest. https://chrisalbon.com/machine-learning/random_forest_classifier_example_scikit.html retrieved on September 7, 2017 
+## [4] kmeans Clustering. https://www.datascience.com/blog/introduction-to-k-means-clustering-algorithm-learn-data-science-tutorials retrieved on September 7, 2017
+## [5] Dendrograms. https://joernhees.de/blog/2015/08/26/scipy-hierarchical-clustering-and-dendrogram-tutorial/ retrieved on September 7, 2017 
+## [6] Dimensionality Reduction using PCA. http://scikit-learn.org/stable/auto_examples/decomposition/plot_faces_decomposition.html retrieved on September 7, 2017 
