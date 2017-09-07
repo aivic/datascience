@@ -1,0 +1,408 @@
+import subprocess as sp
+tmp = sp.call('cls',shell=True)
+
+''' A simple example '''
+
+# Print Hello World!
+
+#print("Hello")
+#print("World!")
+#print("Hello",end="*")
+#print("World!")
+
+
+''' Multiple Assignment '''
+
+#a,b,c = 1,2,3
+#print(a,b,c)
+
+
+''' Data Types '''
+
+#a, b, c, d, e = 1, 2.3, "hi", True, 2 + 3j
+#print(type(a),type(b),type(c),type(d),type(e))
+
+
+''' Type casting '''
+
+#a, b, c, d, e = 1, 2.3, "hi", True, 2+3j
+#a = float(a)
+#b = int(b)
+#c = bool(c)
+#d = complex(d)
+#e = str(e)
+#print(a,b,c,d,e)
+#print(type(a),type(b),type(c),type(d),type(e))
+
+
+''' Data Structures '''
+
+#l = [1, 2, 3,4,5,6]
+#
+#t = (7,8,9,10,11,12)
+#
+#s = {10,20,30,40,50}
+#
+#
+#d = {"key1":[[1,2], [3,4]],
+#     "key2":20}
+
+#print(type(l),
+#      type(t),
+#        type(s),
+#        type(d))
+
+
+
+''' Dictionary Functions '''
+
+
+#d = {"key1":10,
+#     "key2":20}
+#print(d)
+     
+#d["key1"] = 30
+#print("Changing value of a key ",d)
+#d["key3"] = 40
+#print("Adding a new key:value pair ",d)
+#d["key1_new"] = d.pop("key1")
+#print("Renaming key name ",d)
+
+
+''' SLICING '''
+
+# A	B	C	D	E	F	G	1	2	3	4
+# 0	1	2	3	4	5	6	7	8	9	10
+#-11	-10	-9	-8	-7	-6	-5	-4	-3	-2	-1
+
+#A = "ABCDEFG1234"
+#print(len(A))
+#print("A[Inc:End]",A[7:])
+#print("A[Inc:End-1]",A[7:11])
+
+#print("A[Inc:End]",A[-4:])
+#print("A[Low:High]",A[-11:0])
+
+
+''' Operators '''
+
+#print(1 == 2)
+#print(1 != 5)
+#print(1 > 2)
+#print(1 < 2)
+#print(5 >= 5)
+#print(9 <= 9.6)
+#
+#print(1 and False)
+#print(1 or 0)
+
+#print(5 in [8, 6, 5])
+#
+#print(8 not in [5,6,8])
+#print(5 is 8)
+#print(2 is not 3)
+
+
+#''' IF-ELIF-ELSE '''
+#
+#if 1 == 2 or 20 <=5:
+#    print("IF executed.")
+#elif 2 <= 8 and False:
+#    print("ELSE-IF executed.")
+#else:
+#    print("ELSE executed.")
+
+    
+''' WHILE Loop '''
+
+#var1 = [1]*8
+#cnt = 0
+#while(1):   
+#    print(var1[cnt] + cnt)
+#    cnt += 1
+#    if cnt == len(var1):
+#        break
+#
+#
+#print("End of while loop")
+
+
+''' FOR Loop '''
+
+#text1 = "abcd"
+#text2 = "aecb"
+#
+#for i in range(0,len(text2)):
+#    if text2[i] not in text1:
+#        text1 += text2[i]      
+#print(text1)
+
+
+''' Inbuilt functions '''
+#
+#print(len([bool("It's time"),
+#           bool("to invent!")]))
+#
+#print(min([0,1],[1,0]))
+#
+#print(max(20,float(54),int("12")))
+#
+#print(any([1,0,1,0]))
+#print(all([True,True,1,0]))
+
+
+''' def function '''
+
+#def func1_nor():
+#    print("Normal Function!")
+#    return
+
+#def func2_pos(x,y):
+#    print("Positional Function!",x+y)
+#    return 
+#    
+#def func3_key(x = 1, y = "hello world"):
+#    print("Keyword Function!",x,y)
+#    return
+#    
+#def func4_def(x = 1, y = "hello world"):
+#    print("Default Function!",x,y)
+#    return
+#    
+#def func5_var(x, *y):
+#    print("Variable Function!", x, y)
+#    return
+#
+##func1_nor()
+#func2_pos(2,3)
+#func3_key(2,"Incredible World")
+#func4_def(2)
+#func5_var(1,2,3)
+
+
+
+
+''' lambda function '''
+
+#d = lambda x: x**2
+#
+#print(d(2))
+
+## FILTER creates a list of elements for which 
+## a function returns true.
+#foo = [2, 18, 9, 22, 17, 24, 8, 12, 27]
+#print(list(filter(lambda x: x % 3 == 0, foo)))
+#    
+## MAP applies a function to all the items 
+## in an input_list
+#lst = [1,2,3,4]
+#print((map(lambda x: x**2,lst)))
+
+
+
+
+''' GLOBAL and LOCAL scope '''
+
+## Functions don't affect global variable unless 
+## specified with global keyword
+#var = 5
+#def func():
+#    var = 7
+#    return var
+#
+#print(var)
+#print(func())
+#print(var)
+#var = 100
+#print(var)
+
+## Changing global variable throughout the program
+## using global keyword
+#var = 5
+#def func():
+#    global var
+#    var = 7
+#    return var
+#
+#print(var)
+#print(func())
+#print(var)
+
+
+''' Exception Handling '''
+
+#try:
+#    a = int("hi")
+#except:
+#    print("Error found!")
+#finally:
+#    print("Final catch.")
+    
+    
+#try:
+##    a = [10, 20, 30]
+##    print(a[3])
+#    print(2/0)
+#except NameError:
+#    print("NameError Found!")
+#except IndexError:
+#    print("IndexError Found!") 
+#except:
+#    print("handled")
+#finally:
+#    print("Final catch.")
+    
+
+''' MATH library '''
+
+#import math
+#
+#print(math.ceil(8.9))
+#print(math.floor(2.9))
+#print(math.sqrt(4))
+#print(math.factorial(5))
+#print(math.fabs(-9.65))
+
+
+''' STRING Library '''
+
+#text = "A string function example"
+#num = "123"
+#
+#print(text.count("i", 0, len(text)))
+#print(text.replace("example","quotation"))
+#print(text.find("string"))
+#print(text.startswith("s", 2, 5)) # (start,end)
+#print(text.endswith("g", 0, 8)) # (start,end)
+#print(num.isdigit())
+#print(text.upper())
+#print(text.lower())
+#print(text.split(" "))
+
+
+''' LIST Library '''
+
+#lst = [1, 5, 90, 63, 5, 4]
+#lst.append(100)
+#print(lst)
+#lst.insert(0, -100) # (index, value)
+#print(lst)
+#lst.pop()
+#print(lst)
+#lst.remove(5) # removes very first value
+#print(lst)
+#lst.sort()
+#print(lst)
+#lst.reverse()
+#print(lst)
+
+
+''' REGEX '''
+
+#import re
+#
+## To search the pattern "Air" in the given string 
+## "Airline".
+#print(re.search(r"Air","Airline") != None)
+#
+## To search the pattern having two characters in 
+## between A and l in the given string "Aopline".
+#print(re.search(r"A..l","A**line") != None)
+#
+## To search for a digit between A and l in the 
+## given string "A2line".
+#print(re.search(r"A\dl","A2line") != None)
+#
+## To search for a number between 4 and 8 in between
+## A and l in the given string.
+#print(re.search(r"A[4-8]l","A2line") != None)
+#
+## To search for the pattern "Hell" or "Fell" in the
+## given string "Fellow".
+#print(re.search(r"Hell|Fell","Fellow") != None)
+
+
+''' CLASSES & Objects '''
+
+#class C1:
+#    a = d
+#    def __init__(self):
+#        self.__var1 = 1
+#        self.var2 = 2
+#        self.var3 = None
+#        self.__var4 = None
+#        
+#    def get_var1(self):
+#        return self.__var1
+#    
+#    def set_var4(self, val):
+#        self.__var4 = val
+#        
+#    def get_var4(self):
+#        return self.__var4
+#    
+#obj = C1()
+#print("Get Private variable: ", obj.get_var1())
+#print("Get Public variable: ", obj.var2)
+#obj.var3 = 3
+#print("Set Public variable", obj.var3)
+#obj.set_var4(4)
+#print("Set Private variable", obj.get_var4())
+
+
+
+## Universe is a Base class
+#class Universe:
+#    def __init__(self,galaxy_name,no_of_planets):
+#        self.__galaxy_name = galaxy_name
+#        self.__no_of_planets = no_of_planets
+#    
+#    def get_gal_name(self):
+#        return self.__galaxy_name
+#    
+#    def get_planets(self):
+#        return self.__no_of_planets
+#        
+## Planets is a Derived Class
+#class Planets(Universe):    
+#    def __init__(self,galaxy_name, no_of_planets, p1, p2):
+#        Universe.__init__(self,galaxy_name,no_of_planets)
+#        self.p1 = p1
+#        self.p2 = p2
+#    
+#    def display_info(self):
+#        print("Galaxy Name: ", self.get_gal_name())
+#        print("Number of planets: ", self.get_planets())
+#        print("Planet 1: ", self.p1)
+#        print("Planet 2: ", self.p2)
+#        
+#obj1 = Planets("Milky Way", 8, "Earth", "Mars")
+#obj1.display_info()
+#obj2 = Universe("Andromeda","Unknown")
+#print("New Galaxy Name: ", obj2.get_gal_name())
+#print("New Galaxy's planet rank: ", obj2.get_planets())
+
+
+## Aggregation - Passing object of a class as an argument 
+## into another class
+#class A:
+#    def __init__(self):
+#        self.__var1 = 2
+#    
+#    def get_var1(self):
+#        return self.__var1
+#    
+#class B:
+#    def __init__(self):
+#        self.__var2 = 5
+#    
+#    def get_var2(self):
+#        return self.__var2
+#    
+#    def multiplication(self,temp_obj):
+#        print(self.__var2 * temp_obj.get_var1())
+#        return 
+#    
+#obj1 = A()
+#obj2 = B()
+#obj2.multiplication(obj1)
