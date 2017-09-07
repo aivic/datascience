@@ -193,3 +193,11 @@ plt.imshow(img)
 #out = transform.seam_carve(img, eimg, 'vertical', 90)
 #plt.imshow(out)
 #plt.show()
+
+
+
+### references
+### [1] https://matplotlib.org/devdocs/gallery/mplot3d/rotate_axes3d.html retrieved on September 7, 2017
+### [2] http://scikit-image.org/docs/stable/auto_examples/edges/plot_edge_filter.html#sphx-glr-auto-examples-edges-plot-edge-filter-py retrieved on September 7, 2017
+### [3] http://scikit-image.org/docs/stable/auto_examples/xx_applications/plot_geometric.html#sphx-glr-auto-examples-xx-applications-plot-geometric-py retrieved on September 7, 2017
+### [4] http://scikit-image.org/docs/stable/auto_examples/transform/plot_seam_carving.html#sphx-glr-auto-examples-transform-plot-seam-carving-py retrieved on September 7, 2017
