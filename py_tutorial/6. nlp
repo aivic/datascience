@@ -49,3 +49,7 @@ from nltk.book import *
 ## JJ -> adjective
 
 #print(nltk.corpus.indian.tagged_words())
+
+
+### references
+### http://www.nltk.org/book/ retrieved on September 7, 2017
