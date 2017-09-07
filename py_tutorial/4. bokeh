@@ -190,3 +190,9 @@ import bokeh.plotting as bkplt
 # https://demo.bokehplots.com/apps/sliders
 
 # https://demo.bokehplots.com/apps/movies
+
+
+
+
+## references
+## https://bokeh.pydata.org/en/latest/docs/user_guide.html retrieved on September 7, 2017
