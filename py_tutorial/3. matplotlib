@@ -421,3 +421,8 @@ import matplotlib.pyplot as plt
 #                axis = 0))
 #    
 #plt.show()
+
+
+
+## References
+## https://matplotlib.org/1.5.3/users/index.html retrieved on September 7, 2017
