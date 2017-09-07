@@ -1,0 +1,192 @@
+import subprocess as sp
+tmp = sp.call('cls',shell=True)
+
+import numpy as np
+import matplotlib.pyplot as plt
+import bokeh.plotting as bkplt
+
+
+''' A basic example '''
+
+#x =  np.array([0.1, 0.5, 1.0, 1.5, 2.0, 2.5, 3.0])
+#y0 = np.array([i**2 for i in x])
+#y1 = np.array([10**i for i in x])
+#y2 = np.array([10**(i**2) for i in x])
+#
+## File name
+#bkplt.output_file("files/file.html",
+#                  title = "User Example")
+#
+#fig = bkplt.figure(title = "Basic example",                   
+#                   y_range = [0.001, 100],
+#                   x_axis_label = "Abscissa",
+#                   y_axis_label = "Ordinate")
+#
+#fig.line(x, x, legend = "y = x",
+#           line_width = 2)
+#fig.circle(x, x, fill_color="white", size=8)
+#
+#fig.triangle(x, y0, legend="y=x^2", 
+#             color = 'firebrick',
+#             line_width=3, alpha = 0.5)
+#
+#fig.line(x, y1, legend="y=10^x", 
+#         line_color="red")
+#fig.square(x, y1, legend="y=10^x", 
+#           fill_color="red", 
+#           line_color="red", size=6)
+#
+#bkplt.show(fig)
+
+
+
+''' TOOLS '''
+
+
+#TOOLS = "hover,pan,box_zoom,reset,save,box_select,lasso_select"
+
+
+#x = np.linspace(0,4*np.pi,300)
+#y1 = np.sin(x)
+#y2 = np.cos(x)
+#
+#bkplt.output_file("files/file.html")
+#
+#fig1 = bkplt.figure(tools = TOOLS)
+#fig1.circle(x, y1)
+#
+#fig2 = bkplt.figure(tools = TOOLS)
+#fig2.circle(x, y2)
+#
+#fig = bkplt.gridplot([[fig1, fig2]])
+#bkplt.show(fig)
+
+
+## Lasso select
+#from bokeh.models import ColumnDataSource
+#from bokeh.layouts import row, column
+#
+#N = 300
+#x = np.linspace(0, 4*np.pi, N)
+#y0 = np.sin(x)
+#y1 = np.cos(x)
+#
+#bkplt.output_file("files/file.html")
+#
+#ref = ColumnDataSource(data=dict(x=x, y0=y0, y1=y1))
+#
+#left = bkplt.figure(tools=TOOLS, width=350, height=350, title=None)
+#left.circle('x', 'y0', source=ref)
+#
+#right = bkplt.figure(tools=TOOLS, width=350, height=350, title=None)
+#right.circle('x', 'y1', source=ref)
+#
+#
+##bkplt.show(row(left, right))
+#bkplt.show(column(left, right))
+
+
+''' Sub plots '''
+
+#from bokeh.layouts import gridplot 
+#from bokeh.models.widgets import Panel, Tabs
+#
+#x1 = np.arange(10)
+#x2 = np.array([10, 9, 8, 7, 6, 5, 4, 3, 2, 1])
+#
+#x3 = np.arange(10)
+#y3 = np.sqrt(x3)
+#
+#bkplt.output_file("files/file.html")
+#
+#f1 = bkplt.figure(plot_width=250, plot_height=250)
+#f1.diamond(x1, x1, color = 'olive')
+#tab1 = Panel(child = f1, title = 'Fig1')
+#
+#f2 = bkplt.figure(plot_width=250, plot_height=250)
+#f2.diamond(x2, x2, color = 'blue')
+#tab2 = Panel(child = f2, title = 'Fig2')
+#
+#f3 = bkplt.figure(plot_width=250, plot_height=250)
+#f3.diamond(x3, y3, color = 'green')
+#tab3 = Panel(child = f3, title = 'Fig3')
+
+#grid = gridplot([[f1,f2],
+#                 [None,f3]])
+
+#grid = gridplot([f1, f2, 
+#                 None, f3], 
+#                 ncols = 2)
+
+#bkplt.show(grid)
+
+# Tabs
+#tabs = Tabs(tabs = [tab1, tab2, tab3])
+#bkplt.show(tabs)
+
+
+
+''' NaN values '''
+
+#x = np.array([1, 2, 3, np.nan, 5, 6])
+#y = np.array([1, np.nan, 3, np.nan, 5, 6])
+#
+#bkplt.output_file("files/file.html")
+#
+#fig = bkplt.figure(plot_width = 400, plot_height = 400)
+#
+## connection occurs only between 5 and 6
+#fig.diamond(x, y, size = 15, fill_color = 'black',
+#           line_color = 'red', line_width = 3)
+#fig.line(x, y)
+#
+#bkplt.show(fig)
+
+
+
+''' Widgets '''
+
+#from bokeh.layouts import widgetbox
+#from bokeh.models.widgets import Button, TextInput 
+#from bokeh.models.widgets import RadioButtonGroup 
+#from bokeh.models.widgets import Select, Slider
+#from bokeh.models.widgets import Div
+#
+#bkplt.output_file("files/file.html")
+#
+#slider = Slider(start=0, end=10, 
+#                value=5,    # slider by default at 5 
+#                step=.1, title="Slider")
+#
+#button_group = RadioButtonGroup(labels=["Option 1", 
+#                        "Option 2", "Option 3"], 
+#                        active=2)   #Option 3 active
+#
+#select = Select(title="Drop down menu:", 
+#                value="val2", # by default
+#                options=["val1", "val2",  
+#                         "val3", "val4"])
+#
+#button_1 = Button(label="Button 1")
+#button_2 = Button(label="Button 2")
+#
+#text_input = TextInput (title = "Enter text",
+#                        value = "placeholder")
+#
+#para = Div(text = """ Bokeh is a Python interactive visualization library
+#                   that targets modern web browsers for presentation. <br>
+#                   Its goal is to provide elegant, concise construction
+#                   of novel graphics in the style of D3.js""")
+#
+#bkplt.show(widgetbox(slider, button_group,
+#                     select, button_1, 
+#                     button_2, text_input,
+#                     para,
+#                     width=300))
+
+
+''' Demo '''
+
+# https://demo.bokehplots.com/apps/sliders
+
+# https://demo.bokehplots.com/apps/movies
