@@ -16,6 +16,8 @@ features = pd.DataFrame({'Subject':df.iloc[:,0],
 
 to_freq = itemfreq(features.loc[:,'From'])
 
+## Uncomment below command to get sorted result
+#to_freq = np.array(sorted(to_freq, key=lambda x: x[1]))
 
 n_grps = np.arange(to_freq.size//2)
 bar_width = 0.56
