@@ -14,5 +14,5 @@ The database consists of various features as listed:
 * Trainer 
 * Students
 
-There are over 2000 records available in the attached database file. 
+There are over 2007 records available in the attached database file (much of the data cleaning is still required). 
 Big thanks to http://www.wrestlingdata.com for maintaining the data.
