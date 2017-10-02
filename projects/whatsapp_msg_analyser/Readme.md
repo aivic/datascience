@@ -11,7 +11,7 @@ I have done mainly following things regarding data cleaning:
 * Mapping phone numbers to their person holder names
 * Removing messages when someone changes their numbers
 * removing rows with either of the cases:
-    - <image omitted>
-    - <video omitted>
-    - <GIF omitted>
+    - image omitted
+    - video omitted
+    - GIF omitted
 * Visualization
