@@ -1,0 +1,162 @@
+<html>
+<head>
+  <!-- Plotly.js -->
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="http://d3js.org/d3.v3.min.js" language="JavaScript"></script>
+  <script src="liquidFillGauge.js" language="JavaScript"></script>
+  <style>
+    .liquidFillGaugeText { font-family: Helvetica; font-weight: bold; }
+  </style>
+  <style>
+	#cont {
+	  width: 555px;
+	  height: 100px;	  
+	  position: absolute;
+	  left: calc(18%);
+	}
+	#myDiv,
+	#uage {
+	  width: 100%;
+	  height: 100%;
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	}
+	#uage {
+	  z-index: 10;
+	}
+  </style>
+</head>
+
+<body>
+	Your age: <input type="text" id="user_age"=></input><br/>
+	Your education: <input type="text" id="user_nature"=> </input><br/>
+	Domain: <input type="text" id="user_place"=> </input><br/>
+	
+	<button onclick="gauge();nature();;">Submit</button>
+	
+	<div id="cont">
+	<div id = "myDiv" 
+		 style = "width: 180px; 
+				 height: 100px;"></div> 
+	<div id = "uage"
+		 style = "margin-left:30%"><svg id="user_age_gauge" width="17.5%" height="452"></svg></div>
+	</div>
+	
+	
+	<script>
+		function gauge(){
+			var config1 = liquidFillGaugeDefaultSettings();
+			config1.circleColor = "#D4AB6A";
+			config1.textColor = "#553300";
+			config1.waveTextColor = "#805615";
+			config1.waveColor = "#AA7D39";
+			config1.circleThickness = 0.1;
+			config1.circleFillGap = 0.2;
+			config1.textVertPosition = 0.8;
+			config1.waveAnimateTime = 2000;
+			config1.waveHeight = 0.3;
+			config1.waveCount = 1;		
+			var gauge1 = loadLiquidFillGauge("user_age_gauge", document.getElementById('user_age').value, config1);
+
+		}
+	</script>
+
+	<script>
+		function nature(){
+		// nature and place gauge
+		var level = document.getElementById('user_nature').value;
+		
+		var bot_col = "#808080";
+		var vers_col = "#999999";
+		var top_col = "#b0b0b0";
+		var place_col = "#8d8d8d";
+		var bottom = "BACHELOR"
+		var versatile = "<b>MASTER'S<b>"
+		var top = "<b>PhD<b>"
+		
+		if (level.toLowerCase() == "bachelor") {
+			level = 30
+			bot_col = "#ffff33"
+			bottom = "<b>BACHELOR'S<b>"
+		} else if (level.toLowerCase() == "phd"){
+			level = 150
+			top_col = "#1c8dff"
+			var top = "<b>PhD<b>"
+		} else {
+			level = 90
+			vers_col = "#ffff00"
+			var versatile = "<b>MASTER'S<b>"
+		}
+		
+		var place = document.getElementById('user_place').value;
+		if (place.toLowerCase() == "yes"){
+			place = "  \~INFOSYS\~ <br> <b>DATA SCIENCE/ML<b>"
+			place_col = "#66ff00"
+		} else if (place.toLowerCase() == "no") {
+			place = "  \~place\~ <br> <b>UNAVAILABLE<b>"
+			place_col = "#ff3300"
+		} else {
+			place = "  \~place\~ <br> <b>CAN'T SAY<b>"
+			place_col = "#ffcc66"
+		}
+		
+		
+		// Trig to calc meter point
+		var degrees = 180 - level,
+			 radius = .5;
+		var radians = degrees * Math.PI / 180;
+		var x = radius * Math.cos(radians);
+		var y = radius * Math.sin(radians);
+
+		// Path: may have to change to create a better triangle
+		var mainPath = 'M -.0 -0.025 L .0 0.025 L ',
+			 pathX = String(x),
+			 space = ' ',
+			 pathY = String(y),
+			 pathEnd = ' Z';
+		var path = mainPath.concat(pathX,space,pathY,pathEnd);
+
+		var data = [{ type: 'scatter',
+		   x: [0], y:[0],
+			marker: {size: 25, color:'#33ffff'},
+			showlegend: false,
+			name: 'speed',
+			text: level,
+			hoverinfo: 'text+name'},
+		  { values: [10, 10, 10, 30],
+		  rotation: 90,
+		  text: [top, versatile,bottom,place],
+		  textinfo: 'text',
+		  textposition:'inside',      
+		  marker: {colors:[top_col, vers_col, bot_col, place_col]},
+		  labels: ['151-180', '121-150', '91-120', '0-90'],
+		  hoverinfo: 'text',
+		  hole: .5,
+		  type: 'pie',
+		  showlegend: false
+		}];
+
+		var layout = {
+		  shapes:[{
+			  type: 'path',
+			  path: path,
+			  fillcolor: '#33ffff',
+			  line: {
+				color: '#33ffff'
+			  }
+			}],		  
+		  height: 430,
+		  width: 430,
+		  xaxis: {zeroline:false, showticklabels:false,
+					 showgrid: false, range: [-1, 1]},
+		  yaxis: {zeroline:false, showticklabels:false,
+					 showgrid: false, range: [-1, 1]}
+		};
+
+		Plotly.newPlot('myDiv', data, layout, {staticPlot: true});
+		}
+	</script>
+	
+</body>
+</html>
