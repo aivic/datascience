@@ -14,5 +14,5 @@ Currently, given repository is populated with the following aspects:
     * On **R packages** like plyr, dplyr, magrittr, etc.
 * Web Scraping (using **R rvest**)
 
-The repository is updated on frequent timeperiod. For more details refer to **vivekec.github.io**
-In case of any missed citations or specific query write to me @ master[dot]vivek[at]gmail[dot]com
+The repository is updated on frequent timeperiod. For more details refer to **vivekec.github.io**  
+In case of any missed citations or specific query write to me @ mastervivek99[at]gmail[dot]com
