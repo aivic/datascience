@@ -6,4 +6,3 @@
 * data.table - Extension of `data.frame`
 * reshape2 - Flexibly Reshape Data: A Reboot of the Reshape Package
 * tidyr - Easily Tidy Data with 'spread()' and 'gather()' Functions
-* tm - Text Mining Package
