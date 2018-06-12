@@ -6,7 +6,9 @@ As part of me, I push myself through various resources and try to updated my ski
 
 Currently, given repository is populated with the following aspects:
 * Project (on **ML algorithms** and few misc. categories)
-* Tutorials (on **Python packages** like Numpy, Matplotlib, Pandas, Scikit-Learn, etc.)
+* Tutorials 
+    * On **Python packages** like Numpy, Matplotlib, Pandas, Scikit-Learn, etc.
+    * On **R packages** like plyr, dplyr, magrittr, etc.
 * Web Scraping (using **R rvest**)
 
 The repository is updated on frequent timeperiod. For more details refer to **machinedatascience.wordpress.com**
