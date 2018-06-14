@@ -57,10 +57,72 @@
 
 \subsection{Binomial}
 \begin{itemize}
-	\item 
+	\item a binomial distribution is formed by multiplying the total number of ways an event can occur to the probability of one of the way that event can occur.
+	
+	\item PMF of Binomial can be written as -
+	
+	\begin{center}$PMF = C(n,x)*p^xq^{n-x}$ \end{center}
+	
+	where,\\
+	
+	$C(n,x)$ determines the binomial coefficient and also the total number of ways the event can occur\\
+	$n$ total number of trails\\
+	$x$ total number of success\\
+	$n-x$ total number of failures\\
+	$p$ probability of success\\
+	$q$ probability of failure\\
+	\item Example: consider a shop sells 4 kinds of fruits mango, kiwi, banana and apple. \\
+	Further, consider a customer purchases only one out of all four which brings equal probability to all four fruits.\\
+	Let us determine the probability of a customer buying an apple in upcoming 5 customers.\\
+	Moving with the binomial distribution we can arrive at following PMF -\\
+	\begin{center}
+		PMF = $C(4,1)*0.25^1(1-0.25)^3=0.42$\\
+		R code: dbinom(x = 1, size = 4, prob = 0.25)
+	\end{center}
+\end{itemize}
+\subsection{Negative binomial}
+\begin{itemize}
+	\item In this distribution we need to pass the number of success not the number of trails and hence makes it opposite of binomial distribution and so does negative word comes.
+	\item PMF of Negative Binomial can be written as -
+	
+	\begin{center}$PMF = C(x-1,r-1)*p^rq^{x-r}$ 	\end{center}
+	
+	where,\\
+	$x = r, r+1, r+2, ...$\\
+	$r$ number of success trails
+	\item Example: consider the previous fruits example of a shop with four fruits with equally likely outcome. Let us try to find the probability that it takes exactly 7 trails to find 2 customers who purchases an apple.\\
+	here, $r=2, x=7, p=0.25, q=(1-0.25)$
+	\begin{center}
+		PMF = $C(6,1)*0.25^2(1-0.25)^5=0.42$\\
+		R code: dnbinom(x = 5, size = 2, prob = 0.25)
+	\end{center}
 \end{itemize}
 
+\subsection{Poisson}
+\begin{itemize}
+	\item a poisson distribution is built upon three conditions -
+		\begin{enumerate}
+		given an interval of real number constituting of an outcome of interest/success, if this interval is broken down into various sub-intervals 
+			\item there occurs only one success per sub-interval i.e. probability of more than one success in a sub-interval is zero.
+			\item the probability of success in all sub-intervals remain same and proportional to the length of whole interval.
+			\item the count of success in each sub-interval is independent of each other
+		\end{enumerate}
+	\item PMF of poisson
+		\begin{center}
+			\mbox{\Large\( \frac{e^{-\lambda}\lambda^x}{x!} \)} 		
+		\end{center}
+	where\\
+	$x$ number of success\\
+	$\lambda$ expected number of successes
+	
+	\item Example: consider 15 customers arrive in an hour, what is the probability that exactly 20 customers can arrive in another hour.
+	
+	\begin{center}
+			PMF = \mbox{\Large\( \frac{e^{-20}20^{15}}{15!} \)}= 0.051\\
+			R code: dpois(x = 15,lambda = 20) 			
+	\end{center}
 
-
+	
+\end{itemize}
 
 \end{document}
