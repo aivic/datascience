@@ -125,4 +125,18 @@
 	
 \end{itemize}
 
+\section{Continuous PD}
+\textbf{Topics}: uniform | normal | log normal | exponential | gamma | weibull | t | chi-squared | f
+
+\subsection{Uniform}
+\begin{itemize}
+	\item a continuous random variable X can consists of any values in range [a,b] with PDF \mbox{\Large\(\frac{1}{b-a}\)}
+	\item Example: consider weight of a person can vary between 70.8kg to 110kg. \\
+	
+	Here, the PDF will be \mbox{\Large\(\frac{1}{110-70.8}\)} \\
+	R code: dunif(x = 80, min = 70.8, max = 110)\\ \\
+	and CDF for having his weight 85kg is \mbox{\Large\(\frac{85-70.8}{110-70.8}\)}\\
+	R code: punif(x = 80, min = 70.8, max = 110)
+\end{itemize}
+
 \end{document}
