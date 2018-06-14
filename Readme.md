@@ -10,8 +10,9 @@ Currently, given repository is populated with the following aspects:
     * Linear algebra 
     * Probability and statistics
 * Tutorials 
-    * On **Python packages** like Numpy, Matplotlib, Pandas, Scikit-Learn, etc.
-    * On **R packages** like plyr, dplyr, magrittr, etc.
+    * **Python packages**: Numpy, Matplotlib, Pandas, Scikit-Learn, etc.
+    * **R packages**: plyr, dplyr, magrittr, etc.
+    * **Oracle SQL**
 * Web Scraping (using **R rvest**)
 
 The repository is updated on frequent timeperiod. For more details refer to **vivekec.github.io**  
