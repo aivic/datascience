@@ -1,0 +1,25 @@
+\documentclass{article}
+
+\begin{document}
+
+\title{Introduction to Oracle SQL}
+
+\maketitle
+
+
+\section{Key points}
+\begin{itemize}
+	\item $varchar$ is reserved by $Oracle$ to support distinction between $null$ and empty string types. However, $varchar2$ doesn't. 
+	\item Unique key 
+	\begin{itemize}
+		\item doesn't allow duplicate values. 
+		\item a table can have more than one unique key which is not possible with primary key.
+		\item can't be long/raw long
+	\end{itemize}
+	\item Table level constraints are used over column level constraints when the constraints need to be applied on multiple columns.
+	\item Empty strings are also treated as null.
+	\item $dual$ is a table owned by $sys$. sys has the data dictionary and dual is part of it. dual consists of only one row and only one column. Value is $X$ with column name $dummy$
+\end{itemize}
+
+\end{document}
+
