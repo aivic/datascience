@@ -1,6 +1,0 @@
-*.kicad_pcb linguist-detectable=true
-*.sch linguist-detectable=true
-tutorials/oracle sql/sql_I.sql linguist-detectable=true
-tutorials/oracle sql/sql_II.sql linguist-detectable=true
-tutorials/oracle sql/sql_III.sql linguist-detectable=true
-tutorials/oracle sql/sql_IV.sql linguist-detectable=true
