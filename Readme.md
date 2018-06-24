@@ -9,6 +9,7 @@ Currently, given repository is populated with the following aspects:
 * Mathematical concepts available in Ipython notebooks
     * Linear algebra 
     * Probability and statistics
+    * Brief notes on probability distributions
 * Tutorials 
     * **Python packages**: Numpy, Matplotlib, Pandas, Scikit-Learn, etc.
     * **R packages**: plyr, dplyr, magrittr, etc.
