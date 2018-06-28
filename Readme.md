@@ -14,6 +14,7 @@ Currently, given repository is populated with the following aspects:
     * **Python packages**: Numpy, Matplotlib, Pandas, Scikit-Learn, etc.
     * **R packages**: plyr, dplyr, magrittr, etc.
     * **Oracle SQL**
+    * **C++17**
 * Web Scraping (using **R rvest**)
 
 The repository is updated on frequent timeperiod. For more details refer to **vivekec.github.io**  
