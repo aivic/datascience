@@ -18,4 +18,4 @@ Currently, given repository is populated with the following aspects:
 * Web Scraping (using **R rvest**)
 
 The repository is updated on frequent timeperiod. For more details refer to **vivekec.github.io**  
-In case of any missed citations or specific query write to me @ mastervivek99[at]gmail[dot]com
+In case of any missed citations or specific query write to me @ vivekjaglan[at]outlook[dot]com
