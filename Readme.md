@@ -11,7 +11,7 @@ Currently, given repository is populated with the following aspects:
     * Probability and statistics
     * Brief notes on probability distributions
 * Tutorials 
-    * **Python packages**: Numpy, Matplotlib, Pandas, Seaborn, Scikit-Learn, etc.
+    * **Python packages**: Numpy, Pandas, Matplotlib, Seaborn, Scikit-Learn, etc.
     * **R packages**: plyr, dplyr, magrittr, etc.
     * **Oracle SQL**
     * **C++17**
