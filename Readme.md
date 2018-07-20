@@ -12,7 +12,7 @@ Currently, given repository is populated with the following aspects:
     * Brief notes on probability distributions
 * Tutorials 
     * **Python packages**: Numpy, Pandas, Matplotlib, Seaborn, Scikit-Learn (an overview, for details refer vivekec.github.io).
-    * **R packages**: plyr, dplyr, magrttr, tidyr, etc.
+    * **R packages**: plyr, dplyr, magrittr, tidyr, etc.
     * **Oracle SQL**
     * **C++17**
 * Web Scraping (using **R rvest**)
