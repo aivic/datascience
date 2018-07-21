@@ -6,7 +6,7 @@ As part of me, I push myself through various resources and try to updated my ski
 
 Currently, given repository is populated with the following aspects:
 * Project (on **ML algorithms** and few misc. categories)
-* Mathematical concepts available in Ipython noteooks
+* Mathematical concepts available in Ipython notebooks
     * Linear algebra 
     * Probability and statistics
     * Brief notes on probability distributions
