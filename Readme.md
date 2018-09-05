@@ -1,5 +1,5 @@
 [![](https://sourcerer.io/vivekec)](https://sourcerer.io/vivekec)
-bug :bug:
+bug :strawberry:
 
 ## Hello, World!
 
