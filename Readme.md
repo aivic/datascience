@@ -2,7 +2,7 @@
 
 It's always stupendous to collaborate with someone like you with similar interest in the realm of data science and artificial intelligence. 
 
-As part of me, I [![](https://img.shields.io/badge/Vivek-Kumar-red.svg)](https://sourcerer.io/vivekec) push myself through various resources and try to updated my skills both practically and theoretically and meanwhile keep on publishing my notes (codes and all) so that it might help out someone out there. 
+As part of me, I [![](https://img.shields.io/badge/Vivek-Kumar-red.svg)](https://sourcerer.io/vivekec) learn through various resources to keep my skills updated with state-of-the-art technologies both practically and theoretically and meanwhile keep on publishing my notes (codes and relevant notes) so that it might help out someone out there. 
 
 Currently, given ![](https://img.shields.io/badge/data-science-brightgreen.svg) repository is populated with the following aspects
 * Project (on **ML algorithms** and few misc. categories)
