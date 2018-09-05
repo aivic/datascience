@@ -1,8 +1,5 @@
-[![](https://sourcerer.io/fame/$USER/$OWNER/$REPO/images/0)](https://sourcerer.io/fame/$USER/$OWNER/$REPO/links/0)
+[![](https://sourcerer.io/vivekec)](https://sourcerer.io/vivekec)
 
-...
-
-[![](https://sourcerer.io/fame/$USER/$OWNER/$REPO/images/7)](https://sourcerer.io/fame/$USER/$OWNER/$REPO/links/7)
 
 ## Hello, World!
 
