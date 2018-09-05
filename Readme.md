@@ -1,10 +1,10 @@
-## Hello, World! [![](https://img.shields.io/badge/data-science-brightgreen.svg)](https://img.shields.io/badge/data-science-brightgreen.svg)[![](https://img.shields.io/badge/Vivek-Kumar-red.svg)](https://img.shields.io/badge/Vivek-Kumar-red.svg)
+## Hello, World! 
 
 It's always stupendous to collaborate with someone like you with similar interest in the realm of data science and artificial intelligence. 
 
-As part of me, I push myself through various resources and try to updated my skills both practically and theoretically and meanwhile keep on publishing my notes (codes and all) so that it might help out someone out there. 
+As part of me, I [![](https://img.shields.io/badge/Vivek-Kumar-red.svg)](https://sourcerer.io/vivekec) push myself through various resources and try to updated my skills both practically and theoretically and meanwhile keep on publishing my notes (codes and all) so that it might help out someone out there. 
 
-Currently, given repository is populated with the following aspects
+Currently, given [![](https://img.shields.io/badge/data-science-brightgreen.svg)](https://img.shields.io/badge/data-science-brightgreen.svg) repository is populated with the following aspects
 * Project (on **ML algorithms** and few misc. categories)
 * Mathematical concepts available in Ipython notebooks:
     * Linear algebra 
