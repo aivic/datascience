@@ -137,6 +137,37 @@ D: Matrix factorization
 D: Stochastic relational model  
 
 ### Understand
-Q: In what way can you find central neighborhood sets while computing the probabilistic relational model for link prediction?  
-A: Find a shortest path between two nodes and then all the nodes along this path can belong to one central neighborhood set.  
+Q: What is the difference between small world effect and scale free effect under link prediction domain?  
+A: The former refers to the average distance in the network whereas the later refers to the phenomenon that only a few nodes have lots of links  
+D: The former refers to the average distance in the network whereas the later refers to the phenomenon that there's a circle of small groups where each node is related to each other  
+D: The former refers to the phenomenon that only a few nodes have lots of links whereas the later refers to the average distance in the network.  
+D: The former refers to the phenomenon that there's a circle of small groups where each node is related to each other whereas the later refers to the average distance in the network.  
+
+### Apply
+Q: You have built a link prediction model which resulted into a True Positive score of 12, True Negative score of 10, False Positive score of 36 and False Negative score of 18. What is the precision of the following link prediction model?  
+A: 0.25  
+D: 1.20  
+D: 3.60  
+D: 1.80  
+
+### Analyse
+Q: You are validating a link prediction model with two queries. On first query, the relevant document precision is noted as 1.0, 0.67, 0.5, 0.44, and 0.5 whereas on second query, the relevant document precision is noted as 0.5, 0.4 and 0.43. What is the mean average precision of the model in this case?  
+A: 0.53  
+D: 3.11  
+D: 1.33  
+D: 2.22  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
