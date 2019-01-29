@@ -61,8 +61,74 @@ D: 2.9E-4
 D: 2.9E-5  
 
 ### Analyse
-Q: 
+Q: You have transmitted a bit sequence 0 1 1 0 0 0 1 0 1 1 on a network and received a bit sequence 0 0 1 0 1 0 1 0 0 1. In this case, what is the Bit Error Rate of the sequence?  
+A: 30%  
+D: 70%  
+D: 50%  
+D: 60%  
 
+# Identifying measures of centrality used with network data
 
+### Remember
+Q: Which of the following measure assumes that the most important nodes are close to other nodes in a network?  
+A: Closeness centrality  
+D: Degree centrality  
+D: Betweenness centrality  
+D: Feature centrality  
+
+### Understand
+Q: What do you understand by the term network centrality?  
+A: It defines the number of neighbors of a node    
+D: It defines the number of neighbors of a highest degree node  
+D: It defines the maximum number of degrees of a network  
+D: It defines the average number of degrees of a network  
+
+### Apply
+Q: You have to arrive on the measure of centrality of an undirected graph with an assumption that nodes which are important have many connections. What is the measure given that the graph has 15 nodes and 30 degrees?  
+A: 2.14  
+D: 2.00  
+D: 0.50  
+D: 1.53  
+
+### Analyse
+Q: You have to arrive on the measure of centrality of a network with an assumption that the most important nodes are close to other nodes in the network. What is the measure given that the network has 10 nodes and the sum of the shortest distance from each node to the particular node is 18?  
+A: 0.50  
+D: 2.00  
+D: 1.80  
+D: 8.00  
+
+# Define commonly employed network metrics
+
+### Remember
+Q: Which of the following network metric measures the maximum rate at which information can be transferred?  
+A: Bandwidth  
+D: Latency  
+D: Signal to Noise ratio  
+D: Noise to Signal ratio  
+
+### Understand
+Q: In TCP/IP, how does the throughput of a network is affected by high latency combined with relatively small TCP window sizes?  
+A: The throughput of the network drops sharply  
+D: The throughput of the network drops gradually  
+D: The throughput of the network lifts gradually  
+D: The throughput of the network lifts abruptly  
+
+### Apply
+Q: You are setting up a network with TCP receive window size of 65,535 bytes and a round-trip time of 0.22 seconds. What is the throughput of the created network?  
+A: 2.383 Mbit/s  
+D: 5.996 Mbit/s  
+D: 2.978 Mbit/s  
+D: 5.345 Mbit/s  
+
+### Analyse
+Q: You own a website which receives 5000 page views per day with an average page size equal to 800 KB. What is the amount of bandwidth needed per month given the redundancy factor is 2?  
+A: 243.5 GB  
+D: 507.4 GB  
+D: 200.6 MB  
+D: 806.5 MB  
+
+# Building a predictive model targeting associations using link prediction techniques 
+
+### Remember
 
 
