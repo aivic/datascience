@@ -157,8 +157,36 @@ D: 3.11
 D: 1.33  
 D: 2.22  
 
+# Building a predictive model targeting network nodes using collaborative filtering
+
+### Remember
+Q: Which of the following library can be used to implement collaborative filtering?  
+A: fastai  
+D: shock  
+D: contain    
+D: xfilter  
+
+### Understand
+Q: Which of the following statement closely relates to the essence of collaborative filtering?  
+A: A person who likes vanilla ice-cream will share the same dessert interest with a person who also likes vanilla ice-cream  
+D: A person who likes vanilla ice-cream will share the same dessert interest with a person who likes any type cream-topped dessert  
+D: A person who likes vanilla ice-cream will share the same dessert interest with a person who likes junk food.  
+D: A person who likes vanilla ice-cream will share the same dessert interest with a person who prefers hot beverages.  
+
+### Apply
+Q: You have a collaborative filtering model where ratings of 5 users are provided on 3 movies. 1st user movie ratings are (2, 1, 3), 2nd user movie ratings are (0, 1, 0), 3rd user movie ratings are (5, 5, 5), 4th user movie ratings are (2, 5, 5), and 5th user movie ratings are (2, 2, 3). Based on the following data, which is the most similar user to user 5?  
+A: User 1  
+D: User 2  
+D: User 3  
+D: User 4  
 
 
+### Analyse
+Q: While implementing collaborative filtering on movie recommendation network model, what would happen if a movie and a user are close in a vector space?   
+A: It’s more likely that the user will rate the movie high  
+D: It’s less likely that the user will rate the movie high   
+D: It’s more likely that the user will not rate the movie   
+D: It's less likely that the user will rate the movie  
 
 
 
