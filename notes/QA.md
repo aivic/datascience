@@ -130,5 +130,13 @@ D: 806.5 MB
 # Building a predictive model targeting associations using link prediction techniques 
 
 ### Remember
+Q: Which of the following technique comprises of shortest path distance to perform link prediction?  
+A: Feature-based techniques  
+D: Kernel-based techniques  
+D: Matrix factorization  
+D: Stochastic relational model  
 
+### Understand
+Q: In what way can you find central neighborhood sets while computing the probabilistic relational model for link prediction?  
+A: Find a shortest path between two nodes and then all the nodes along this path can belong to one central neighborhood set.  
 
