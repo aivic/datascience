@@ -37,11 +37,31 @@ D: 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0
 D: 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1  
 D: 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 0, 1  
 
+# Identifying common components of network metrics
 
+### Remember
+Q: Which of the following network metric provides an actual rate of transferring information?  
+A: Throughput  
+D: Bandwidth  
+D: Latency  
+D: Jitter  
 
+### Understand
+Q: What is the outcome of an increased jitter in a network?  
+A: It degrades the performance of a network  
+D: It increases the stability of a network  
+D: It helps to reduce the signal to noise ratio  
+D: It decreases the bandwidth of a network drastically 
 
+### Apply
+Q: You are designing a 50 kilometers of spreaded network and need to test its performance. What is the latency of the network in seconds?  
+A: 1.6E-4  
+D: 1.6E-5  
+D: 2.9E-4  
+D: 2.9E-5  
 
-
+### Analyse
+Q: 
 
 
 
