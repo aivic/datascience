@@ -67,3 +67,19 @@ D: F4
 # Describing the foundational library SciPy upon which scikit-learn is built
 
 ### Remember
+Q: Which module is a part of SciPy library?  
+A: fftpack  
+D: optim  
+D: inter1p  
+D: image  
+
+### Understand
+Q: What is the difference between NumPy and SciPy?  
+A: SciPy consists of fully-featured versions of modules which is not the case with NumPy.  
+D: SciPy consists of text processing modules which is not the case with NumPy.  
+D: SciPy provides linear algebra module which is not available in NumPy  
+D: SciPy's goal is to provide compatibility whereas NumPy's goal is to provide complete features of a module  
+
+### Apply
+ 
+A:
