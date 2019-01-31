@@ -76,11 +76,11 @@ D: SciPy provides linear algebra module which is not available in NumPy
 D: SciPy's goal is to provide compatibility whereas NumPy's goal is to provide complete features of a module  
 
 ### Apply
-Q: You have been given with two 1D arrays as [10, 10, 20, 10, 4] and [2, 2, 4, 5]. How can you find the repeating elements of each array  [10, 2] along with their repeatition count [3, 2]?  
-A: from scipy import stats; stats.find_repeats([[10, 10, 20, 10, 4], [2, 2, 4, 5]])  
-D: from scipy import stats; stats.find_repeats([[10, 10, 20, 10, 4], [2, 2, 4, 5]])  
-D: from scipy import stats; stats.find_repeats([[10, 10, 20, 10, 4], [2, 2, 4, 5]])  
-D: from scipy import stats; stats.find_repeats([[10, 10, 20, 10, 4], [2, 2, 4, 5]])  
+Q: You have been given with two 1D arrays as [10, 10, 10, 4] and [2, 2, 4, 5]. How can you find the repeating elements of each array  [2, 4, 10] along with their repeatition count [2, 2, 3]?  
+A: from scipy import stats; stats.find_repeats([[10, 10, 10, 4], [2, 2, 4, 5]])  
+D: from scipy import stats; stats.repeat([[10, 10, 10, 4], [2, 2, 4, 5]])  
+D: from scipy import stats; stats.mode([[10, 10, 10, 4], [2, 2, 4, 5]])  
+D: from scipy import stats; stats.modes([[10, 10, 10, 4], [2, 2, 4, 5]])  
 
 ### Analyze
 Q: You have configured Anaconda environment in your system and imported SciPy module. However, it resulted into an ImportError, what can you do to eradicate this error?  
@@ -106,4 +106,3 @@ D: Redistributions in binary form must reproduce the mentioned copyright notice 
 D: Redistributions in binary form must reproduce the mentioned disclaimer in the documentation and/or other materials provided with the distribution.  
 
 
-D: 
