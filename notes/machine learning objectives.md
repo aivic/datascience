@@ -1,5 +1,3 @@
-* Describing where Scikit-learn fits into the machine learning project workflow
-
 * Describing the limitations of neural networks built with scikit-learn compared to more specialized frameworks
 * Building a neural network to solve a classification problem
 * Building a neural network to solve a regression problem
@@ -188,11 +186,35 @@ D: Pandas
 
 # Comparing scikit-learn usage to other machine  learning Python packages, such as PyTorch and TensorFlow
 
+### Remember
+Q: Which neural network algorithm is not yet supported by Scikit-Learn?  
+A: Pix2Pix  
+D: Restricted Boltzmann machines  
+D: Classifier  
+D: Regression  
 
+### Understand
+Q: While building a neural network in Scikit-Learn, what happens if you initiate with a warm start?   
+A: It gives you more control over stopping criteria or learning rate  
+D: It reduces the control over stopping criteria or learning rate  
+D: It implements the stratified sampling on the dataset    
+D: It results into the same output of method on each run  
 
+### Apply
+Q: You need to create a restricted boltzmann machines with binary visible units and binary hidden units. Given that the parameters are estimated using Stochastic Maximum Likelihood, how can you implement the model?  
+A: sklearn.neural_network.BernoulliRBM()  
+D: sklearn.neural_network.Bernoulli()  
+D: sklearn.neural_network.Boltzmann()  
+D: sklearn.neural_network.RBM()  
 
+### Analyze
+Q: You need to visualize 3D histograms of model accuracy on several runs. The code has been built in PyTorch, which is true about visualizing the 3D histograms?  
+A: Use Tensorboard which supports PyTorch via tensorboard_logger  
+D: Use Wisdom which is a visualization library for PyTorch
+D: Use Matplotlib which supports PyTorch code  
+D: Use Seaborn which supports PyTorch code  
 
-
+# Describing where Scikit-learn fits into the machine learning project workflow
 
 
 
