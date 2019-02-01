@@ -1,5 +1,3 @@
-* Comparing scikit-learn features to other machine learning Python packages, such as PyTorch and TensorFlow
-* Comparing scikit-learn usage to other machine  learning Python packages, such as PyTorch and TensorFlow
 * Describing where Scikit-learn fits into the machine learning project workflow
 
 * Describing the limitations of neural networks built with scikit-learn compared to more specialized frameworks
@@ -145,6 +143,54 @@ D: Within multiple modules in a single package
 D: Within multiple classes in a single package  
 
 ### Apply
+Q: You are building a baseline naive Bayes classification model on a dataset. Which mandatory step is required before predicting values on new features?  
+A: Model fitting  
+D: Model validation  
+D: Model tuning  
+D: Model selection  
+
+### Analyze
+Q: While comparing the library Scikit-Learn with the library pymvpa, you realized Scikit-Learn is built only upon core python libraries whereas pymvpa uses non-python dependencies. What are the core libraries on which Scikit-Learn is built upon?  
+A: NumPy and SciPy  
+D: NumPy  
+D: R and Shogun  
+D: Shogun  
+
+# Comparing scikit-learn features to other machine learning Python packages, such as PyTorch and TensorFlow
+
+### Remember
+Q: Which of the python library provides high-level off-the-shelf algorithms for feature selection?  
+A: Scikit-Learn  
+D: PyTorch  
+D: TensorFlow  
+D: Keras  
+
+### Understand
+Q: What is true about Scikit-Learn and TensorFlow?  
+A: Scikit-Learn can be built on the top of TensorFlow  
+D: Scikit-Learn provides low-level function calls like add, matmul etc.  
+D: Scikit-Learn provides high-level function calls like Trees, NaiveBayes etc.  
+D: Scikit-Learn as well as TensorFlow are distributed under the MIT license.  
+
+### Apply
+Q: You need to predict the target variable using five independent features through a exponential regression model. How can you implement the model in the Scikit-Learn as well as in the TensorFlow?  
+A: In Scikit-Learn use pre-defined methods whereas in TensorFlow build the respective algorithm  
+D: In Scikit-Learn build the respective algorithm whereas in TensorFlow use pre-defined methods    
+D: In Scikit-Learn use pre-defined methods whereas you cannot build the model in TensorFlow  
+D: Both Scikit-Learn and Tensorflow doesn't support building an exponential regression model  
+
+### Analyze
+Q: Machine learning libraries provide visualization tools to compare several runs of output. Which visualization tool can be integrated with PyTorch to perform visualization?  
+A: Visdom  
+D: Tensorboard  
+D: Crayon  
+D: Pandas  
+
+# Comparing scikit-learn usage to other machine  learning Python packages, such as PyTorch and TensorFlow
+
+
+
+
 
 
 
