@@ -1,4 +1,3 @@
-* Describing the feature topology of scikit-learn's packages
 * Comparing scikit-learn features to other machine learning Python packages, such as PyTorch and TensorFlow
 * Comparing scikit-learn usage to other machine  learning Python packages, such as PyTorch and TensorFlow
 * Describing where Scikit-learn fits into the machine learning project workflow
@@ -128,3 +127,29 @@ A: You must take permission from Scikit-Learn owners in written.
 D: You must take permission from Scikit-Learn owners verbally.  
 D: You can proceed with marketing the product but you must also inform the authors about this event    
 D: You can proceed with marketing the product with no need to inform the authors about this event    
+
+# Describing the feature topology of scikit-learn's packages
+
+### Remember 
+Q: Which feature is a part of the Scikit-Learn library?  
+A: Dataset transformation  
+D: Sparse data structures  
+D: Date functionality  
+D: Styling  
+
+### Understand
+Q: How does Scikit-Learn stores multiple methods which belong to a similar domain?  
+A: Within a single module  
+D: Within a single package  
+D: Within multiple modules in a single package  
+D: Within multiple classes in a single package  
+
+### Apply
+
+
+
+
+
+
+
+
