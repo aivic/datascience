@@ -1,3 +1,13 @@
+* Describing the feature topology of scikit-learn's packages
+* Comparing scikit-learn features to other machine learning Python packages, such as PyTorch and TensorFlow
+* Comparing scikit-learn usage to other machine  learning Python packages, such as PyTorch and TensorFlow
+* Describing where Scikit-learn fits into the machine learning project workflow
+
+* Describing the limitations of neural networks built with scikit-learn compared to more specialized frameworks
+* Building a neural network to solve a classification problem
+* Building a neural network to solve a regression problem
+* Describing methods to help neural networks from overfitting data that are employed by Scikit-Learn
+
 # Defining how Scikit-Learn is used for data mining
 
 ### Remember
