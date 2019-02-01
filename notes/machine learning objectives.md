@@ -246,6 +246,32 @@ D: Stratified K Fold implemented as SKFold()
 
 # Describing the limitations of neural networks built with scikit-learn compared to more specialized frameworks
 
+### Remember
+Q: Which library provides only CPU-based implementation of neural networks?  
+A: Scikit-Learn  
+D: TensorFlow  
+D: PyTorch    
+D: Keras  
 
+### Understand
+Q: What is the key differentator between Scikit-Learn and other specialized neural network frameworks?  
+A: Scikit-Learn is not intended for building neural networks on large-scale applications.  
+D: Scikit-Learn supports GPU-based implementation of neural network model building.
+D: The parameters like weights and biases generated from Scikit-Learn are hard to visualize
+D: The model's metrics like loss and accuracy generated from Scikit-Learn are hard to visualize
+
+### Apply
+Q: You will soon start working on a production project and currently seeking a neural network framework which provides low-level API to write algorithms from scratch for better control. Which framework is suitable for you?  
+A: TensorFlow  
+D: Scikit-Learn  
+D: PyTorch  
+D: Keras  
+
+### Analyze
+Q: You need to build a neural network on a dataset whose file-size spans in terabytes. What is recommended to build such a deep learning model?  
+A: Use any specialized neural network framework which is GPU compatible.  
+D: Use any specialized neural network framework which is CPU compatible.  
+D: Use Scikit-Learn library since it is GPU compatible.  
+D: Use Scikit-Learn library since it is CPU compatible.  
 
 
