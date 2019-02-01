@@ -252,9 +252,9 @@ D: Keras
 ### Understand
 Q: What is the key differentator between Scikit-Learn and other specialized neural network frameworks?  
 A: Scikit-Learn is not intended for building neural networks on large-scale applications.  
-D: Scikit-Learn supports GPU-based implementation of neural network model building.
-D: The parameters like weights and biases generated from Scikit-Learn are hard to visualize
-D: The model's metrics like loss and accuracy generated from Scikit-Learn are hard to visualize
+D: Scikit-Learn supports GPU-based implementation of neural network model building.  
+D: The parameters like weights and biases generated from Scikit-Learn are hard to visualize  
+D: The model's metrics like loss and accuracy generated from Scikit-Learn are hard to visualize  
 
 ### Apply
 Q: You will soon start working on a production project and currently seeking a neural network framework which provides low-level API to write algorithms from scratch for better control. Which framework is suitable for you?  
