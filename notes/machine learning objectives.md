@@ -105,4 +105,16 @@ D: Redistributions of source code must retain the mentioned copyright notice and
 D: Redistributions in binary form must reproduce the mentioned copyright notice in the documentation and/or other materials provided with the distribution.  
 D: Redistributions in binary form must reproduce the mentioned disclaimer in the documentation and/or other materials provided with the distribution.  
 
+### Apply
+Q: You have used Scikit-Learn library in building a machine learning software for your organization and ready to productionize it. Which possible license is required to publish this software?  
+A: Any license  
+D: Only distributions of BSD license  
+D: Only MIT license  
+D: Only Apache license 2.0  
 
+### Analyze
+Q: Your organization has built a product based on Scikit-Learn and ready for its promotion using the names of Scikit-Learn's authors  and contributors. What necessary step is required before the organization can start its marketing?  
+A: You must take permission from Scikit-Learn owners in written.  
+D: You must take permission from Scikit-Learn owners verbally.  
+D: You can proceed with marketing the product but you must also inform the authors about this event    
+D: You can proceed with marketing the product with no need to inform the authors about this event    
