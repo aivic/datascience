@@ -1,4 +1,3 @@
-* Describing the limitations of neural networks built with scikit-learn compared to more specialized frameworks
 * Building a neural network to solve a classification problem
 * Building a neural network to solve a regression problem
 * Describing methods to help neural networks from overfitting data that are employed by Scikit-Learn
@@ -216,7 +215,36 @@ D: Use Seaborn which supports PyTorch code
 
 # Describing where Scikit-learn fits into the machine learning project workflow
 
+### Remember 
+Q: In which step you perform hyper-parameter tuning of a machine learning model?  
+A: Model validation  
+D: Model selection  
+D: Model fitting  
+D: Model evaluation  
 
+### Understand
+Q: What do you understand by model evaluation?  
+A: It tests final performance of model on test data  
+D: It tests final performance of model on validation data  
+D: It tests initial performance of model on train data  
+D: It tests initial performance of model on test data  
+
+### Apply
+Q: You need to split a dataset into train (71%) and test (29%) data with same data points falling under respective sections in each and every run. What Scikit-Learn's command is required to to complete the task?  
+A: sklearn.model_selection.train_test_split(data, test_size=0.29, random_state=42)  
+D: sklearn.model_selection.split(data, test_size=0.29, random_state=0)  
+D: sklearn.cross_validation.train_test_split(data, test_size=0.29)  
+D: sklearn.cross_validation.split(data, test_size=0.29)  
+
+### Analyze
+Q: You need to implement a simple cross-validation where each learning set is created by taking all the samples except one, the test set being the sample left out. Which cross-validation technique implemented under Scikit-Learn is suitable for this task?  
+A: Leave One Out implemented as LeaveOneOut()  
+D: Skip One implemented as Skip()  
+D: K Fold implemented as KFold()  
+D: Stratified K Fold implemented as SKFold()  
+
+
+# Describing the limitations of neural networks built with scikit-learn compared to more specialized frameworks
 
 
 
