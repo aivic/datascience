@@ -1,7 +1,3 @@
-* Building a neural network to solve a classification problem
-* Building a neural network to solve a regression problem
-* Describing methods to help neural networks from overfitting data that are employed by Scikit-Learn
-
 # Defining how Scikit-Learn is used for data mining
 
 ### Remember
@@ -273,5 +269,98 @@ A: Use any specialized neural network framework which is GPU compatible.
 D: Use any specialized neural network framework which is CPU compatible.  
 D: Use Scikit-Learn library since it is GPU compatible.  
 D: Use Scikit-Learn library since it is CPU compatible.  
+
+# Building a neural network to solve a classification problem
+
+### Remember
+Q: Which method implements classification using neural network in Scikit-Learn?  
+A: MLPClassifier()  
+D: Classification()  
+D: Classifier()  
+D: NNClassifier()  
+
+### Understand
+Q: What is true about implementing classification using neural network using Scikit-Learn?  
+A: It supports only cross-entropy to calculate its loss function  
+D: It supports only classification error to calculate its loss function  
+D: It supports only mean squared error to calculate its loss function  
+D: It supports only mean absolute error to calculate its loss function  
+
+### Apply 
+Q: You have built a neural network classifier using Scikit-Learn on a dataset of size 23 GB. How can you find the shape of the weight matrices from the fitted model?  
+A: [coef.shape for coef in clf.coefs_]  
+D: {coef for coef in clf.coefs_}  
+D: (coef.shape for coef in clf.coefs)  
+D: [coef for coef in clf.coefs]  
+
+### Analyze
+Q: You have a pretty large dataset onto which you need to deploy a neural net classifier using Scikit-Learn. Given that epochs should stop if no rise in target metric is observed, what solver is appropriate for such model?  
+A: solver should be adam with early_stopping argument set to True  
+D: solver should be sgd with no change in early_stopping argument  
+D: solver should be sgd with early_stopping argument set to True  
+D: solver should be lbfgs with no change in early_stopping argument  
+
+# Building a neural network to solve a regression problem
+
+### Remember
+Q: Which method implements neural network regressor in Scikit-Learn?  
+A: MLPRegressor  
+D: Regression()  
+D: Regressor()  
+D: NNRegressor()  
+
+### Understand
+Q: What is true about implementing neural network regression using Scikit-Learn?  
+A: It implements a multi-layer perceptron model that trains using backpropagation method  
+D: It implements a McCulloch-Pitts neuron model that trains using backpropagation method  
+D: It uses ReLU inside its activation function in the output layer  
+D: It uses Leaky ReLU inside its activation function in the output layer  
+
+### Apply
+Q: You are building a neural network regression model using Adam optimizer. Which command satisfies the requirement with unity as the value for epsilon?  
+A: sklearn.neural_network.MLPRegressor(epsilon=1)  
+D: sklearn.neural_network.Regressor(solver='adam', epsilon=1)  
+D: sklearn.neural_network.Regression(solver='adam', epsilon=1)  
+D: sklearn.neural_network.NNRegressor(epsilon=1)  
+
+### Analyze
+Q: You have fitted a neural network regression model using stochastic gradient descent (SGD). Which metric has been optimized by SGD to build the network?  
+A: Squared loss  
+D: Mean abosolute deviation  
+D: Hinge loss  
+D: Cross entropy  
+
+# Describing methods to help neural networks from overfitting data that are employed by Scikit-Learn
+
+### Remember
+Q: Which method is used to avoid overfitting in a machine learning model?  
+A: Model regularization  
+D: Model reformation  
+D: Model selection    
+D: Model evaluation  
+
+### Understand
+Q: What is true about an ideal overfit model?  
+A: The training accuracy of the model becomes 100% whereas the validation accuracy reaches 0%.  
+D: The training accuracy of the model becomes 0% whereas the validation accuracy reaches 100%.  
+D: The training as well as validation accuracy of the model becomes 0%  
+D: The training as well as validation accuracy of the model becomes 100%  
+
+### Apply 
+Q: You are deriving a boundary to separate two classes using a neural network classifier. However, it has been observed that the model undergone overfitting. What values of regularization paramters can be passed to overcome the issue?  
+A: Large range of numbers produced as [i for i in np.logspace(-5, 3, 10)]  
+D: Large range of natural numbers produced as [i for i in np.logspace(1, 10, 10)]  
+D: Large range of whole numbers produced as [i for i in np.logspace(0, 10, 10)]  
+D: Large range of negative numbers produced as [i for i in np.logspace(-10, -1, 10)]  
+
+### Analyze
+Q: You are implementing a neural net regressor which is showing good performance on training data but bad performance on test data. What can be done to eradicate this problem?  
+A: Use alpha parameter to avoid overfitting  
+D: Use gamma parameter to avoid overfitting  
+D: Use beta parameter to avoid underfitting  
+D: Use gamma parameter to avoid underfitting   
+
+
+
 
 
