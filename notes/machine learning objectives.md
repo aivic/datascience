@@ -205,7 +205,7 @@ D: sklearn.neural_network.RBM()
 ### Analyze
 Q: You need to visualize 3D histograms of model accuracy on several runs. The code has been built in PyTorch, which is true about visualizing the 3D histograms?  
 A: Use Tensorboard which supports PyTorch via tensorboard_logger  
-D: Use Wisdom which is a visualization library for PyTorch
+D: Use Wisdom which is a visualization library for PyTorch  
 D: Use Matplotlib which supports PyTorch code  
 D: Use Seaborn which supports PyTorch code  
 
