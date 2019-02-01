@@ -361,6 +361,20 @@ D: Use beta parameter to avoid underfitting
 D: Use gamma parameter to avoid underfitting   
 
 
+# Identifying the Dimensionality reduction algorithms supported by Scikit-Learn
 
+### Remember
+Q: Which dimensionality reduction algorithm has inbuilt support provided by Scikit-Learn?  
+A: Principal Component Analysis  
+D: Missing Value Ratio  
+D: Low Variance Filter  
+D: High Correlation Filter  
+
+### Understand
+Q: What is true about dimensionality reduction algorithms?  
+A: They try to find out the subset of original features.  
+D: They transform the data in the low-dimensional space to a space of high dimensions  
+D: They require a large amount of computation during feature generation  
+D: They don't obstruct the multicollinearity within the dataset features  
 
 
