@@ -1,4 +1,3 @@
-* Mapping a dataset to a common distribution (such as Uniform or Gaussian) using Scikit-learn 
 * Normalizing a data set using scikit-learn
 * Reducing dataset complexity with dimensionality reduction using scikit-learn
 * Summarizing the functions available in scikit-learn used to approximate feature mappings for specific kernels
@@ -122,6 +121,38 @@ A: sklearn.feature_extraction.image.PatchExtractor((3, 5)).transform(img)
 D: sklearn.feature_extraction.image.PatchExtractor().transform(img, (3, 5))  
 D: sklearn.feature_extraction.image.PatchExtractor().transform((3, 5), img, 'extract')  
 D: sklearn.feature_extraction.image.PatchExtractor(img, (3, 5)).transform('extract')   
+
+# Mapping a dataset to a common distribution (such as Uniform or Gaussian) using Scikit-learn 
+
+### Remember
+Q: Which transformation is favored above scaling methods to smooth out the unusual distributions?  
+A: Rank  
+D: Quartile  
+D: Range  
+D: Moment  
+
+### Understand
+Q: Which is true about the process of mapping any distribution data to as close to a Gaussian distribution?  
+A: It stabilizes variance and minimizes skewness.  
+D: It involves the use of a family of non-parametric transformations.  
+D: It is one of the non-monotonic transformation.  
+D: It can be applied to a strictly negative data using Box-Cox.  
+
+### Apply
+Q: You have a dataset with one of the feature following a log-normal distribution. The given feature is expected to have presence of outliers. How can you convert the following feature's distribution to a normal distribution?  
+A: sklearn.preprocessing.PowerTransformer(standardize=False).fit_transform(feature)  
+D: sklearn.preprocessing.PowerTransformer(feature, standardize=False).transform()  
+D: sklearn.preprocessing.PowerTransformer().transform(feature)  
+D: sklearn.preprocessing.PowerTransformer(feature)    
+
+### Analyze
+Q: You have 105 skewed features in your dataset which can either have strictly positive or strictly negative values. What modification is needed to PowerTransformer method to bring their distribution to as close to a Gaussian distribution such that the transformed data has zero-mean and unit-variance?  
+A: Proceed with the default settings  
+D: Add "make" argument in the method    
+D: Set the argument "method" to 'johnson'  
+D: Set the argument "method" to 'box-cox'  
+
+
 
 
 
