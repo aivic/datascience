@@ -1,4 +1,3 @@
-* Extracting patches from an image using scikit-learn
 * Mapping a dataset to a common distribution (such as Uniform or Gaussian) using Scikit-learn 
 * Normalizing a data set using scikit-learn
 * Reducing dataset complexity with dimensionality reduction using scikit-learn
@@ -94,14 +93,35 @@ D: sklearn.feature_extraction.text.CountVectorizer.fit_transform(corp, ngram_ran
 D: sklearn.feature_extraction.text.CountVectorizer(ngram_range=(1, 2), corp).fit_transform(doc)  
 D: sklearn.feature_extraction.CountVectorizer(corp).fit_transform(ngram_range=(1, 2)).toarray()  
 
+# Extracting patches from an image using scikit-learn
 
+### Remember
+Q: Which command is used to extract features from multiple images simultaneously?  
+A: PatchExtractor  
+D: Extractor  
+D: extract_patches_2d  
+D: extract  
 
+### Understand
+Q: Which is true about extracting patches from an image using Scikit-Learn?  
+A: A patch with a defined shape can be extracted from multiple images simultaneously  
+D: A patch with a known area can be extracted from multiple images simultaneously  
+D: Patches with different shapes can be extracted from multiple images simultaneously  
+D: Patches with different shapes can be extracted from a single image simultaneously   
 
+### Apply
+Q: You have extracted 10 patches of shape (2, 2) from a red channel of an image of shape (4, 4, 3). How can you reconstruct the original image?  
+A: sklearn.feature_extraction.image.reconstruct_from_patches_2d(patches, (4, 4, 3))  
+D: sklearn.feature_extraction.reconstruct_from_patches_2d(patches, (4, 4, 3))  
+D: sklearn.feature_extraction.image.reconstruct_from_patches_2d(patches, (4, 4, 3), (2, 2))  
+D: sklearn.feature_extraction.reconstruct_from_patches_2d(patches, (4, 4, 3), (2, 2))  
 
-
-
-
-
+### Analyze
+Q: You are successful in extracting patches from images one at a time. However, with increasing number of available images, you are in a need of an estimator. How can you extract patches of shape (3, 5) from multiple images stored in a variable "img" using Scikit-Learn?  
+A: sklearn.feature_extraction.image.PatchExtractor((3, 5)).transform(img)  
+D: sklearn.feature_extraction.image.PatchExtractor().transform(img, (3, 5))  
+D: sklearn.feature_extraction.image.PatchExtractor().transform((3, 5), img, 'extract')  
+D: sklearn.feature_extraction.image.PatchExtractor(img, (3, 5)).transform('extract')   
 
 
 
