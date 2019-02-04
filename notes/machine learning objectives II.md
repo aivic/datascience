@@ -1,4 +1,3 @@
-* Building a bag-of-words from a text document using scikit-learn
 * Extracting patches from an image using scikit-learn
 * Mapping a dataset to a common distribution (such as Uniform or Gaussian) using Scikit-learn 
 * Normalizing a data set using scikit-learn
@@ -65,6 +64,35 @@ D: Use an unsigned hash function
 D: Use a differential computing function  
 D: Use a integral computing function  
 
+# Building a bag-of-words from a text document using scikit-learn
+
+### Remember
+Q: In which sequence specific strategies are used to build a bag-of-words using Scikit-Learn?  
+A: Tokenizing, Counting and Normalizing.  
+D: Tokenizing and Counting.  
+D: Tokenizing and Normalizing.  
+D: Only Tokenizing.  
+
+### Understand
+Q: Which is true about Tokenization strategy used while building a bag-of-words?  
+A: White-spaces and punctuations are treated as token separators.  
+D: White-spaces are comma are treated as token separators.  
+D: White-spaces and hyphen are treated as token separators.  
+D: Only white-spaces are treated as token separators.  
+
+### Apply
+Q: You need to create a matrix of token count from a list of documents named "doc" with a value of ['This is the first document.', 'This is the second second document.', 'And the third one.', 'Is this the first document?',]. What command is required to achieve the same?  
+A: sklearn.feature_extraction.text.CountVectorizer().fit_transform(doc).toarray()  
+D: sklearn.feature_extraction.text.CountVectorizer.fit_transform(doc).toarray()  
+D: sklearn.feature_extraction.text.CountVectorizer().fit_transform(doc)  
+D: sklearn.feature_extraction.CountVectorizer().fit_transform(doc).toarray()  
+
+### Analyze
+Q: You have built an output matrix of token counts from a list of documents which resulted in a poor performance for a machine learning model. You realize the model performance can be improved if you consider unigram as well as bigram. How can you achieve the same given a corpus named "corp" with values ['This is the first document.', 'This is the second second document.', 'And the third one.', 'Is this the first document?',]?  
+A: sklearn.feature_extraction.text.CountVectorizer(ngram_range=(1, 2)).fit_transform(corp).toarray()  
+D: sklearn.feature_extraction.text.CountVectorizer.fit_transform(corp, ngram_range=(1, 2)).toarray()  
+D: sklearn.feature_extraction.text.CountVectorizer(ngram_range=(1, 2), corp).fit_transform(doc)  
+D: sklearn.feature_extraction.CountVectorizer(corp).fit_transform(ngram_range=(1, 2)).toarray()  
 
 
 
