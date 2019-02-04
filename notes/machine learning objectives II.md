@@ -45,4 +45,35 @@ D: 2^16 - 2
 D: (2^64)/64  
 
 ### Understand
-Q: 
+Q: Which of the following is true about feature hashing using Scikit-Learn?  
+A: It is a high-speed and low-memory vectorizer.  
+D: It builds a hash table of the features encountered in training set.  
+D: It provides high-speed with better inspectability.  
+D: Its input can be retreived back using inverse_transform method.  
+
+### Apply
+Q: You have a python data structure "d" given as [{'dog': 1, 'cat':2, 'elephant':4},{'dog': 2, 'run': 5}]. In what way you can implement the hashing trick on "d" with 10 features in the output matrix?  
+A: sklearn.feature_extraction.FeatureHasher(n_features=10).transform(d).toarray()  
+D: sklearn.feature_extraction.FeatureHasher(d, n_features=10).transform().toarray()  
+D: sklearn.feature_extraction.FeatureHasher(d, n_features=10).transform()  
+D: sklearn.feature_extraction.FeatureHasher().transform(d).toarray()  
+
+### Analyze
+Q: You are performing feature hashing using Scikit-Learn and need to make sure that the hash function should not cause collisions between (unrelated) features. What can be done to prevent the collisions for a small hash table?  
+A: Use a signed hash function  
+D: Use an unsigned hash function  
+D: Use a differential computing function  
+D: Use a integral computing function  
+
+
+
+
+
+
+
+
+
+
+
+
+
