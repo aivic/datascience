@@ -1,4 +1,3 @@
-* Generating an artificial data set for a specific model using scikit-learn
 * Detecting outliers in a data set using scikit-learn
 
 
@@ -301,3 +300,36 @@ A: [name for name in lfw.target_names]
 D: [name for name in lfw.names]  
 D: [name for name in lfw.target]  
 D: [name for name in lfw]  
+
+# Generating an artificial data set for a specific model using scikit-learn
+
+### Remember
+Q: Which method can create a challenging artificial data set for a linear classification model?  
+A: make_moons  
+D: make_blobs  
+D: make_classification  
+D: make_gaussian  
+
+### Understand
+Q: What is the difference between make_blobs and make_classification methods?  
+A: The former constructs a clustering data-set whereas the later constructs a classification data-set.  
+D: The former constructs a multi-class data-set whereas the later constructs a binary-class data-set.  
+D: The former provides greater control on standard deviations of each feature whereas the later lacks control on each feature.  
+D: The former lacks control on standard deviations of each feature whereas the later provides greater control on each feature.  
+
+### Apply
+Q: You need to test an available multiple regression model on a sample dataset. How can you generate an univariate artificial data-set with 12 features and 1390 samples?  
+A: sklearn.datasets.make_regression(n_samples=1390, n_features=12)  
+D: sklearn.datasets.make_regression(n_samples=1390, n_features=12, n_target=1)  
+D: sklearn.datasets.make_multi_regression(n_samples=1390, n_features=12)  
+D: sklearn.datasets.make_multi_regression(n_samples=1390, n_features=12, n_target=1)  
+
+### Analyze
+Q: You need to learn the difference between implementing hierarchical clustering with and without connectivity constraints on a sample dataset. Which data-set can feature the distinction appropriately?  
+A: Swiss roll data-set generated using sklearn.datasets.make_swiss_roll method  
+D: Swiss roll data-set generated using sklearn.datasets.make_SwissRoll method  
+D: Paired cluster data-set generated using sklearn.datasets.make_paired_cluster method  
+D: Paired cluster data-set generated using sklearn.datasets.make_PairedCluster method  
+
+
+
