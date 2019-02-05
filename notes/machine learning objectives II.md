@@ -211,5 +211,30 @@ D: Use HierarchicalClustering method from the cluster module.
 # Summarizing the functions available in scikit-learn used to approximate feature mappings for specific kernels
 
 ### Remember
-Q: 
+Q: Which method is generally used for low-rank approximations of kernels?  
+A: Nystroem Method for Kernel Approximation  
+D: Radial Basis Function Kernel  
+D: Additive Chi Squared Kernel  
+D: Skewed Chi Squared Kernel  
+
+### Understand
+Q: Which is true about kernel approximation?  
+A: They are best suitable for online learning.  
+D: They perform linear transformation of the input.  
+D: They are modeled for small to medium scale data-sets.  
+D: Their mapping relies on a temporal difference approximation.   
+
+### Apply
+Q: You need to build a linear Support Vector Machine (SVM) model on a dataset using four quantitative features. How can you explicitly transform the features to a kernel map, prior to applying the algorithm?  
+A: features = sklearn.kernel_approximation.RBFSampler(gamma=1, random_state=1).fit_transform(features)  
+D: features = sklearn.kernel_approximation.RBFSampler(features, gamma=1, random_state=1).fit_transform()  
+D: features = sklearn.kernel_approximation.RBFSampler(gamma=1).fit(features)  
+D: features = sklearn.kernel_approximation.RBFSampler(gamma=1).transform(features)  
+
+### Analyze
+Q: You are performing a kernel approximation using additive chi squared kernel with first vector given as (-8, 5, 6). What is the value of additive chi squared kernel if the second vector is (8, -5, -6)?   
+A: Undefined  
+D: Zero  
+D: A natural number      
+D: An irrational number  
 
