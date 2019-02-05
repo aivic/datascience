@@ -1,3 +1,7 @@
+* Generating an artificial data set for a specific model using scikit-learn
+* Detecting outliers in a data set using scikit-learn
+
+
 # Performing feature extraction on a python dict
 
 ### Remember
@@ -237,4 +241,39 @@ A: Undefined
 D: Zero  
 D: A natural number      
 D: An irrational number  
+
+# Loading an internal sample data set in scikit-learn
+
+### Remember
+Q: Which toy dataset is available inside scikit-learn?  
+A: Wine  
+D: Air pollution  
+D: Traffic  
+D: Sea level  
+
+### Understand
+Q: Which is true about dataset loaders?  
+A: By default, their function returns a dictionary-like object.  
+D: By default, their function returns a list-like object.  
+D: Their function can constrain the output to be a tuple holding only data.  
+D: Their function can constrain the output to be a tuple holding only target.  
+
+### Apply
+Q: You are working on house price prediction problem and using inbuilt Boston dataset from Scikit-Learn. How can you import the features and store them in a variable, X?  
+A: X = sklearn.datasets.load_boston()['data']    
+D: X = sklearn.datasets.load_boston()['content']  
+D: X = sklearn.datasets.load_boston()['features']   
+D: X = sklearn.datasets.load_boston()['target']  
+
+### Analyze
+Q: You get a classification toy data set named digits from the internal corpus of Scikit-Learn. How can you account for the meaning of each feature within the data set?  
+A: sklearn.datasets.load_digits().DESCR  
+D: sklearn.datasets.load_digits().describe()  
+D: sklearn.datasets.load_digits().INFO  
+D: sklearn.datasets.load_digits().info()  
+
+# Loading an external dataset in scikit-learn
+Q: 
+
+
 
