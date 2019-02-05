@@ -1,6 +1,3 @@
-* Detecting outliers in a data set using scikit-learn
-
-
 # Performing feature extraction on a python dict
 
 ### Remember
@@ -330,6 +327,35 @@ A: Swiss roll data-set generated using sklearn.datasets.make_swiss_roll method
 D: Swiss roll data-set generated using sklearn.datasets.make_SwissRoll method  
 D: Paired cluster data-set generated using sklearn.datasets.make_paired_cluster method  
 D: Paired cluster data-set generated using sklearn.datasets.make_PairedCluster method  
+
+# Detecting outliers in a data set using scikit-learn
+
+### Remember
+Q: Which visualization technique is used to detect outliers in a sample?  
+A: Boxplot  
+D: Bar graph  
+D: Area chart  
+D: Pie chart  
+
+### Understand
+Q: What is the difference between outlier detection and novelty detection?  
+A: Outlier detection locates outliers in existing samples whereas novelty detection locates outliers in upcoming sample.  
+D: Outlier detection locates outliers in upcoming sample whereas novelty detection locates outliers in existing samples.  
+D: In outlier detection process the training data holds outliers whereas in novelty detection process the training data may or may not holds outliers.  
+D: In outlier detection process the training data doesn't holds outliers whereas in novelty detection the training data holds outliers.  
+### Apply
+Q: You have a classification data-set with the presence of several positive as well as negative outliers. How can you implement a bootstrapped Isolation Forest algorithm choosing 15 number of features to train each base estimator?  
+A: sklearn.ensemble.IsolationForest(max_features=15, bootstrap=True)    
+D: sklearn.ensemble.IsolationForest(bootstrap=True)  
+D: sklearn.ensemble.IsolationForestAlgorithm(max_features=15, bootstrap=True)  
+D: sklearn.ensemble.IsolationForestAlgorithm(bootstrap=T)  
+
+### Analyze
+Q: You are working on a medium sized Gaussian distributed dataset which can have the presence of outliers. Assuming the outliers need to be observed visually, how can you detect the outliers in this dataset, given the proportion of outliers is 0.19?  
+A: sklearn.covariance.EllipticEnvelope(contamination=0.19)  
+D: sklearn.covariance.EllipticEnvelope(proportion=0.19)  
+D: sklearn.preprocessing.GaussianOutlier(contamination=0.19)  
+D: sklearn.preprocessing.GaussianOutlier(proportion=0.19)  
 
 
 
