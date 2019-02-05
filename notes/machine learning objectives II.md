@@ -183,4 +183,35 @@ D: sklearn.preprocessing.normalize(samples, norm='l2', copy=False, axis=0)
 # Reducing dataset complexity with dimensionality reduction using scikit-learn
 
 ### Remember
-Q: 
+Q: What sort of data-set needs an implementation of dimensionality reduction methods?  
+A: A data-set with large number of features.  
+D: A data-set with small number of features.  
+D: A data-set with more number of samples.  
+D: A data-set with less number of samples.  
+
+### Understand
+Q: What happens when Singular Vector Decomposition (SVD) and Principal Component Analysis (PCA) methods are implemented on a data with zero mean?  
+A: They end up producing same projection.  
+D: They end up producing distinct projection.  
+D: Similar projection results, given the data is left skewed.  
+D: Similar projection results, given the data is right skewed.  
+
+### Apply
+Q: To compute Principal Component Analysis (PCA), you have four pairs of datapoints given as, {5, 5, -5}:{0, 1, 1}, {2.6, 5, -2.6}:{1, 0, -1}, {-6, 8, -20}:{8, 1, -2}, and {-6, 2, -20}:{8, 1, -2}. Which of these pairs can be chosen as the first two components of PCA?  
+A: {5, 5, -5}:{0, 1, 1} and {-6, 8, -20}:{8, 1, -2}  
+D: {5, 5, -5}:{0, 1, 1} and {-6, 2, -20}:{8, 1, -2}  
+D: {2.6, 5, -2.6}:{1, 0, -1} and {-6, 8, -20}:{8, 1, -2}  
+D: {2.6, 5, -2.6}:{1, 0, -1} and {-6, 2, -20}:{8, 1, -2}  
+
+### Analyze
+Q: You have performed preprocessing of a dataset which has features with very different scaling or statistical properties. What method is suitable to capture the links between such features?  
+A: Use StandardScaler method from the preprocessing module.   
+D: Use Scale method from the preprocessing module.   
+D: Use FeatureAgglomeration method from the cluster module.  
+D: Use HierarchicalClustering method from the cluster module.   
+
+
+
+
+
+
