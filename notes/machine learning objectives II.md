@@ -1,5 +1,3 @@
-* Summarizing the functions available in scikit-learn used to approximate feature mappings for specific kernels
-
 # Performing feature extraction on a python dict
 
 ### Remember
@@ -210,8 +208,8 @@ D: Use Scale method from the preprocessing module.
 D: Use FeatureAgglomeration method from the cluster module.  
 D: Use HierarchicalClustering method from the cluster module.   
 
+# Summarizing the functions available in scikit-learn used to approximate feature mappings for specific kernels
 
-
-
-
+### Remember
+Q: 
 
