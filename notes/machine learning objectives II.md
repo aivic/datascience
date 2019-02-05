@@ -1,5 +1,3 @@
-* Normalizing a data set using scikit-learn
-* Reducing dataset complexity with dimensionality reduction using scikit-learn
 * Summarizing the functions available in scikit-learn used to approximate feature mappings for specific kernels
 
 # Performing feature extraction on a python dict
@@ -147,12 +145,42 @@ D: sklearn.preprocessing.PowerTransformer(feature)
 
 ### Analyze
 Q: You have 105 skewed features in your dataset which can either have strictly positive or strictly negative values. What modification is needed to PowerTransformer method to bring their distribution to as close to a Gaussian distribution such that the transformed data has zero-mean and unit-variance?  
-A: Proceed with the default settings  
-D: Add "make" argument in the method    
-D: Set the argument "method" to 'johnson'  
-D: Set the argument "method" to 'box-cox'  
+A: Proceed with the default settings.  
+D: Proceed with inplace computation during transformation.  
+D: Set the argument "method" to 'johnson'.  
+D: Set the argument "method" to 'box-cox'.  
 
+# Normalizing a data set using scikit-learn
 
+### Remember
+Q: What is the effect of normalization on individual samples?  
+A: It scales them to have unit norm  
+D: It scales them to have square root norm  
+D: It scales them to have zero-mean and unit-variance  
+D: It scales them to have unit-mean and zero-variance  
 
+### Understand
+Q: Where does implementation of normalization process is appropriate?  
+A: On a quadratic form such as the dot-product.  
+D: On an exponential increasing or decreasing data samples.  
+D: On any other kernel to quantify the mean of any pair of samples.  
+D: On any other kernel to quantify the mode of any pair of samples.  
 
+### Apply
+Q: You are building a nearest neighbor classification model on a dataset with unequal range of features. How can you normalize the features before feeding them to the machine learning model?  
+A: sklearn.preprocessing.normalize(features, axis=0)  
+D: sklearn.preprocessing.normalize(features, axis=0).fit()  
+D: sklearn.preprocessing.normalize(features, axis=1)  
+D: sklearn.preprocessing.normalize(features, axis=1).fit()  
 
+### Analyze
+Q: You have a sparse input data which is converted to the Compressed Sparse Rows (CSR) representation using SciPy csr_matrix method. How can you perform the lasso normalization of individual samples without creating an additional copy of the samples?   
+A: sklearn.preprocessing.normalize(samples, norm='l1', copy=False)  
+D: sklearn.preprocessing.normalize(samples, norm='l2', copy=True)  
+D: sklearn.preprocessing.normalize(samples, norm='l1', copy=True, axis=1)  
+D: sklearn.preprocessing.normalize(samples, norm='l2', copy=False, axis=0)  
+
+# Reducing dataset complexity with dimensionality reduction using scikit-learn
+
+### Remember
+Q: 
