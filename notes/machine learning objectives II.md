@@ -245,11 +245,11 @@ D: An irrational number
 # Loading an internal sample data set in scikit-learn
 
 ### Remember
-Q: Which toy dataset is available inside scikit-learn?  
-A: Wine  
-D: Air pollution  
-D: Traffic  
-D: Sea level  
+Q: What is the source of the majority internal data sets available inside Scikit-Learn?  
+A: UCI  
+D: Kaggle  
+D: Google dataset  
+D: CMU dataset  
 
 ### Understand
 Q: Which is true about dataset loaders?  
@@ -273,7 +273,31 @@ D: sklearn.datasets.load_digits().INFO
 D: sklearn.datasets.load_digits().info()  
 
 # Loading an external dataset in scikit-learn
-Q: 
 
+### Remember
+Q: Which real world dataset can be accessed using scikit-learn?  
+A: kddcup99  
+D: covertpe  
+D: rcm4  
+D: wild98  
 
+### Understand
+Q: Which is true about dataset fetchers?   
+A: They can be used to download real world datasets.  
+D: They can be used to upload generated datasets.  
+D: They support loading toy datasets.   
+D: They do not support loading large datasets.  
 
+### Apply
+Q: You need to build a multinomial Naive Bayes classifier on 20 newsgroups data set loaded from Scikit-Learn package. How can you select training data out of the dataset to initiate model fitting?  
+A: sklearn.datasets.fetch_20newsgroups(subset='train')  
+D: sklearn.datasets.fetchers_20newsgroups(subset='train')  
+D: sklearn.datasets.fetch_20newsgroups(data='train')  
+D: sklearn.datasets.fetchers_20newsgroups(data='train')  
+
+### Analyze
+Q: You have fetched the dataset named "labeled faces in the wild people" from the Scikit-Learn and stored the method in a variable "lfw" retrieving 50 faces. How can you extract the names associated with each of the 50 faces?  
+A: [name for name in lfw.target_names]  
+D: [name for name in lfw.names]  
+D: [name for name in lfw.target]  
+D: [name for name in lfw]  
