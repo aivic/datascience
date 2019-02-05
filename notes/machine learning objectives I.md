@@ -1,3 +1,11 @@
+* Implementing PCA using scikit-learn
+* Implementing Factor Analysis using scikit-learn
+* Implementing Linear Discriminant Analysis (LDA) using scikit-learn
+* Implementing Multidimensional Scaling (MDS) using scikit-learn
+* Implementing t-distributed Stochastic Neighbor Embedding (t-SNE) using scikit-learn
+* Implementing dictionary learning using scikit-learn
+
+
 # Defining how Scikit-Learn is used for data mining
 
 ### Remember
