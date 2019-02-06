@@ -1,4 +1,3 @@
-* Implementing PCA using scikit-learn
 * Implementing Factor Analysis using scikit-learn
 * Implementing Linear Discriminant Analysis (LDA) using scikit-learn
 * Implementing Multidimensional Scaling (MDS) using scikit-learn
@@ -385,4 +384,28 @@ D: They transform the data in the low-dimensional space to a space of high dimen
 D: They require a large amount of computation during feature generation  
 D: They don't obstruct the multicollinearity within the dataset features  
 
+### Apply
+Q: You have a dataset with a large number of features onto which you need to apply a linear regression model. How can you select the topmost 40 important features using backward feature elimination algorithm?  
+A: sklearn.feature_selection.RFE(model, 40).fit_transform(features, target)  
+D: sklearn.feature_selection.RFE(model, 40).fit_transform(features)  
+D: sklearn.feature_selection.BackwardElimination(model, 40).fit_transform(features, target)  
+D: sklearn.feature_selection.BackwardElimination(model, 40).fit_transform(features)  
 
+### Analyze
+Q: You need to pick 15 features which improves the performance of a model out of a large number of features in a dataset using F-values. How can you apply an univariate test to achieve the desired features?  
+A: sklearn.feature_selection.f_regression(features, target)  
+D: sklearn.feature_selection.f_regression(model, 15).fit_transform(features, target)  
+D: sklearn.feature_selection.ForwardPass(features, target)  
+D: sklearn.feature_selection.ForwardPass(model, 15).fit_transform(features, target)  
+
+# Implementing PCA using scikit-learn
+
+### Remember
+Q: Under which module does Principal Component Analysis (PCA) belongs to?  
+A: Decomposition  
+D: Reduction  
+D: Dimentionality  
+D: Elimination  
+
+### Understand
+Q: 
