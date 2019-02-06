@@ -1,4 +1,3 @@
-* Implementing Multidimensional Scaling (MDS) using scikit-learn
 * Implementing t-distributed Stochastic Neighbor Embedding (t-SNE) using scikit-learn
 * Implementing dictionary learning using scikit-learn
 
@@ -480,11 +479,48 @@ D: sklearn.discriminant_analysis.LDA(solver='eigen', shrinkage=0.3).fit(X, y)
 D: sklearn.discriminant_analysis.LDA(shrinkage=0.3).fit(X, y)  
 
 ### Analyze
-Q: You need to build a Linear Discriminant Analysis model where the process of standardization is optional. So, what is the population variance and population standard deviation for given data {10, 2, 38, 23, 38, 23, 21}?  
+Q: You need to build a Linear Discriminant Analysis model using standardization process on feature {10, 2, 38, 23, 38, 23, 21}. What is the population variance and population standard deviation for the given feature?  
 A: 151, 12  
 D: 176, 13  
 D: 151, 13  
 D: 176, 12  
+
+# Implementing Multidimensional Scaling (MDS) using scikit-learn
+
+### Remember
+Q: Which graph is used to visualize the output of a 2D Multidimensional Scaling results?  
+A: Scatter plot  
+D: Pie chart  
+D: Line chart  
+D: Bar graph  
+
+### Understand
+Q: What is the difference between Multidimensional Scaling (MDS) and Factor Analysis?  
+A: The former can analyze any kind of similarity or dissimilarity matrix, in addition to correlation matrix whereas the latter can analyze only correlation matrix.  
+D: The former can analyze any kind of similarity or dissimilarity matrix whereas the latter can analyze only correlation matrix.  
+D: The former requires that the underlying data are distributed as multivariate normal, and that the relationships are linear wheras the latter imposes no such restrictions. 
+D: The former requires that the underlying data are distributed as bivariate normal wheras the latter imposes no such restrictions. 
+
+### Apply
+Q: You have the handwritten digits dataset consisting of 64 numeric attributes. How can you reduce its features to 15 using Multidimensional scaling?  
+A: sklearn.manifold.MDS(n_components=15).fit_transform(X)  
+D: sklearn.manifold.MDS(n_components=15).fit_transform(X, 64)  
+D: sklearn.manifold.MultiDimensionalScaling(n_components=15).fit_transform(X)  
+D: sklearn.manifold.MultiDimensionalScaling(n_components=15).fit_transform(X, 64)  
+
+### Analyze
+Q: You have developed 4 models by performing variations to Multidimensional Scaling. The evaluation measure, stress for each of the model is given as 0.05, 0.1, 0.025, 0.2. Which of the four model showcase an excellent goodness-of-fit?  
+A: Model with stress value 0.025  
+D: Model with stress value 0.05  
+D: Model with stress value 0.1  
+D: Model with stress value 0.2  
+
+
+
+
+
+
+
 
 
 
