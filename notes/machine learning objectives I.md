@@ -1,6 +1,3 @@
-* Implementing dictionary learning using scikit-learn
-
-
 # Defining how Scikit-Learn is used for data mining
 
 ### Remember
@@ -531,13 +528,20 @@ D: It suppresses some noise and has a cost function which is convex.
 D: With different t-SNE initializations you get similar results.  
 
 ### Apply
-Q: 
+Q: You need to visualize 80 features out of a dataset through t-SNE implementation. How can you implement the t-SNE with a perplexity of 40?  
+A: sklearn.manifold.TSNE(perplexity=40).fit_transform(80_features)  
+D: sklearn.manifold.TSNE(perplexity=40, 80_features).fit_transform()  
+D: sklearn.manifold.tSNE(n_components=2, perplexity=40).fit_transform(80_features)  
+D: sklearn.manifold.tSNE(n_components=3, perplexity=40).fit_transform(80_features)  
 
+### Analyze
+Q: You need to implement t-SNE on a dataset with thousands of examples having nearest-neighbor errors better than 3%. How can you arrive at this model?  
+A: sklearn.manifold.TSNE(method='exact').fit_transform(features)  
+D: sklearn.manifold.TSNE(method='barnes_hut', features).fit_transform()  
+D: sklearn.manifold.tSNE(method=exact).fit_transform(features)  
+D: sklearn.manifold.tSNE(method=barnes_hut, perplexity=10).fit_transform(features)  
 
-
-
-
-
+# Implementing dictionary learning using scikit-learn
 
 
 
