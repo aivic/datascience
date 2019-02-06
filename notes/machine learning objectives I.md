@@ -537,23 +537,39 @@ D: sklearn.manifold.tSNE(n_components=3, perplexity=40).fit_transform(80_feature
 ### Analyze
 Q: You need to implement t-SNE on a dataset with thousands of examples having nearest-neighbor errors better than 3%. How can you arrive at this model?  
 A: sklearn.manifold.TSNE(method='exact').fit_transform(features)  
-D: sklearn.manifold.TSNE(method='barnes_hut', features).fit_transform()  
-D: sklearn.manifold.tSNE(method=exact).fit_transform(features)  
-D: sklearn.manifold.tSNE(method=barnes_hut, perplexity=10).fit_transform(features)  
+D: sklearn.manifold.TSNE(features, perplexity=10).fit_transform()  
+D: sklearn.manifold.tSNE(method='lapack').fit_transform(features)  
+D: sklearn.manifold.tSNE(method='barnes_hut', perplexity=10).fit_transform(features)  
 
 # Implementing dictionary learning using scikit-learn
 
+### Remember
+Q: Which domain heavily benefits from dictionary learning techniques?  
+A: Image denoising  
+D: Image enhancement  
+D: Image edge detection  
+D: Image segmentation  
 
+### Understand
+Q: What is true about dictionary learning method?   
+A: The sparser the representation, the better the dictionary.  
+D: The sparser the representation, the worse the dictionary.  
+D: The manipulation of a dictionary can be computationally cheap at the learning stage.    
+D: The manipulation of a dictionary can be computationally cheap at the testing stage.  
 
+### Apply
+Q: You have a noisy image which needs to be converted to a sparse code. How can you achieve the task using dictionary learning which computes Lasso solution through coordinate descent method?  
+A: sklearn.decomposition.DictionaryLearning(fit_algorithm='cd')  
+D: sklearn.reduction.DictionaryLearning(fit_algorithm='CD')  
+D: sklearn.dimensionality.DictionaryLearning(method='cd')  
+D: sklearn.composition.DictionaryLearning(method='CD')  
 
-
-
-
-
-
-
-
-
+### Analyze
+Q: You are modeling a downstream classifier using dictionary learning, what may happen if you split the sparse feature vector into the concatenation of its negative part and its positive part?  
+A: This can improve the model's performance.  
+D: This can degrade the model's performance.  
+D: The model may result into random classes.  
+D: The model may result into a constant class.  
 
 
 
