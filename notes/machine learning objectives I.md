@@ -1,4 +1,3 @@
-* Implementing Factor Analysis using scikit-learn
 * Implementing Linear Discriminant Analysis (LDA) using scikit-learn
 * Implementing Multidimensional Scaling (MDS) using scikit-learn
 * Implementing t-distributed Stochastic Neighbor Embedding (t-SNE) using scikit-learn
@@ -427,6 +426,40 @@ A: {-1, 1}
 D: {1, -1}  
 D: {1, 2}  
 D: {2, -1}  
+
+# Implementing Factor Analysis using scikit-learn
+
+### Remember
+Q: Which factor extraction type uses principal axis method?  
+A: Canonical  
+D: Common  
+D: PCA  
+D: Alpha  
+
+### Understand
+Q: What is true about factor analysis?  
+A: It is a part of general linear model (GLM).  
+D: It is suitable for a dataset having multicollinearity.  
+D: It assumes there is true convolution between variables.  
+D: It assumes there is true convolution between factors.  
+
+### Apply
+Q: Given a digit dataset fetched from Scikit-Learn, how can you extract 42 components from the data using the factor analysis?  
+A: sklearn.decomposition.FactorAnalysis(n_components=42, random_state=42).fit_transform(X)  
+D: sklearn.decomposition.FactorAnalysis(n_components=42, random_state=42, svd_method='arpack').fit_transform(X, y)  
+D: sklearn.decomposition.FA(n_components=42).fit_transform(X)  
+D: sklearn.decomposition.FA(n_components=42, svd_method='arpack').fit_transform(X, y)  
+
+### Analyze
+Q: You have a square matrix of shape 3x3 given as [[1, 2, 1], [2, 1, 1], [0, 1, 1]]. What are the eigenvalues corresponding to the matrix?  
+A: 2 + sqrt(2), -1, 2 - sqrt(2)  
+D: 2*sqrt(2), -1, -2*sqrt(2)  
+D: 2, -1, -2  
+D: 2, -1, 0    
+
+
+
+
 
 
 
