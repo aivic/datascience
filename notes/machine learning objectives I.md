@@ -408,4 +408,26 @@ D: Dimentionality
 D: Elimination  
 
 ### Understand
-Q: 
+Q: Which step is involved in implementing Principal Component Analysis (PCA)?  
+A: Subtract mean from data.  
+D: Subtract median from data.  
+D: Calculate correlation matrix.  
+D: Calculate the Hermitian matrix.  
+
+### Apply
+Q: You need to reduce the dimensionality of a data using truncated Singular Value Decomposition. In what way, can you perform this task?  
+A: sklearn.decomposition.PCA(min(n_samples, n_features)-1, svd_solver='arpack')  
+D: sklearn.reduction.PCA(min(n_samples, n_features), svd_solver='arpack')  
+D: sklearn.dimentionality.PCA(min(n_samples, n_features)-1, svd_solver='mle')  
+D: sklearn.elimination.PCA(min(n_samples, n_features), svd_solver='mle')  
+
+### Analyze
+Q: Given a square matrix of size 2x2 with values [[1,2], [4, 3]]. What is the eigenvector for a negative eigenvalue formed out of this matrix?  
+A: {-1, 1}  
+D: {1, -1}  
+D: {1, 2}  
+D: {2, -1}  
+
+
+
+
