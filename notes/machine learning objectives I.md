@@ -1,4 +1,3 @@
-* Implementing Linear Discriminant Analysis (LDA) using scikit-learn
 * Implementing Multidimensional Scaling (MDS) using scikit-learn
 * Implementing t-distributed Stochastic Neighbor Embedding (t-SNE) using scikit-learn
 * Implementing dictionary learning using scikit-learn
@@ -453,14 +452,39 @@ D: sklearn.decomposition.FA(n_components=42, svd_method='arpack').fit_transform(
 ### Analyze
 Q: You have a square matrix of shape 3x3 given as [[1, 2, 1], [2, 1, 1], [0, 1, 1]]. What are the eigenvalues corresponding to the matrix?  
 A: 2 + sqrt(2), -1, 2 - sqrt(2)  
-D: 2*sqrt(2), -1, -2*sqrt(2)  
+D: 1 + sqrt(2), -1, 1 - sqrt(2)  
 D: 2, -1, -2  
 D: 2, -1, 0    
 
+# Implementing Linear Discriminant Analysis (LDA) using scikit-learn
 
+### Remember
+Q: Which technique is most closely related to Linear Discriminant Analysis?  
+A: Logistic regression  
+D: Analysis of Variance  
+D: Analysis of Covariance  
+D: Naive Bayes  
 
+### Understand
+Q: What benefits are provided by Linear Discriminant Analysis?  
+A: It is suitable for binary-class problems.  
+D: It is not sensitive to overfitting.  
+D: It works well for an imbalanced data.  
+D: It is preferred for non-linear problems.  
 
+### Apply
+Q: You have a dataset with quite less number of features with target attribute consisting of 2 groups. How can you implement a Linear Discriminant Analysis model with shrinkage equal to 0.3?  
+A: sklearn.discriminant_analysis.LinearDiscriminantAnalysis(solver='eigen', shrinkage=0.3).fit(X, y)  
+D: sklearn.discriminant_analysis.LinearDiscriminantAnalysis(shrinkage=0.3).fit(X, y)  
+D: sklearn.discriminant_analysis.LDA(solver='eigen', shrinkage=0.3).fit(X, y)  
+D: sklearn.discriminant_analysis.LDA(shrinkage=0.3).fit(X, y)  
 
+### Analyze
+Q: You need to build a Linear Discriminant Analysis model where the process of standardization is optional. So, what is the population variance and population standard deviation for given data {10, 2, 38, 23, 38, 23, 21}?  
+A: 151, 12  
+D: 176, 13  
+D: 151, 13  
+D: 176, 12  
 
 
 
