@@ -1,4 +1,3 @@
-* Implementing t-distributed Stochastic Neighbor Embedding (t-SNE) using scikit-learn
 * Implementing dictionary learning using scikit-learn
 
 
@@ -498,8 +497,8 @@ D: Bar graph
 Q: What is the difference between Multidimensional Scaling (MDS) and Factor Analysis?  
 A: The former can analyze any kind of similarity or dissimilarity matrix, in addition to correlation matrix whereas the latter can analyze only correlation matrix.  
 D: The former can analyze any kind of similarity or dissimilarity matrix whereas the latter can analyze only correlation matrix.  
-D: The former requires that the underlying data are distributed as multivariate normal, and that the relationships are linear wheras the latter imposes no such restrictions. 
-D: The former requires that the underlying data are distributed as bivariate normal wheras the latter imposes no such restrictions. 
+D: The former requires that the underlying data are distributed as multivariate normal, and that the relationships are linear wheras the latter imposes no such restrictions.  
+D: The former requires that the underlying data are distributed as bivariate normal wheras the latter imposes no such restrictions.  
 
 ### Apply
 Q: You have the handwritten digits dataset consisting of 64 numeric attributes. How can you reduce its features to 15 using Multidimensional scaling?  
@@ -514,6 +513,38 @@ A: Model with stress value 0.025
 D: Model with stress value 0.05  
 D: Model with stress value 0.1  
 D: Model with stress value 0.2  
+
+# Implementing t-distributed Stochastic Neighbor Embedding (t-SNE) using scikit-learn
+
+### Remember
+Q: Which dimensionality reduction method is recommended to use if the number of features are very high in a sparse dataset?  
+A: TruncatedSVD  
+D: PCA  
+D: t-SNE  
+D: Multidimensional Scaling  
+
+### Understand
+Q: What is true about t-distributed Stochastic Neighbor Embedding?  
+A: It converts similarities between data points to joint probabilities.  
+D: It tries to keep the KL divergence constant between the joint probabilities.  
+D: It suppresses some noise and has a cost function which is convex.  
+D: With different t-SNE initializations you get similar results.  
+
+### Apply
+Q: 
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
