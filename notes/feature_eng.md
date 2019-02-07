@@ -80,7 +80,28 @@ D: [[ 0.5, -0.5 ,  1. ], [ 1. ,  0. ,  0. ], [ 0. ,  1. , -0.5]]
 # Quantizing (or bin) large-scale counts and values  
 
 ### Remember
+Q: What may result when linear models are preprocessed with discretization?  
+A: Introduction of nonlinearity in the model.  
+D: Introduction of outliers in the model.  
+D: Creation of a high-sparse dataset.  
+D: Creation of a denser dataset.  
 
+### Understand
+Q: What happens when quantization of large-scale data is performed?  
+A: It transforms the continuous data to the nominal data.  
+D: It transforms the continuous data to the binary data.  
+D: It transforms the nominal data to the continuous data.  
+D: It transforms the discrete data to the continuous data.  
+
+### Apply
+Q: You have a square matrix of size 3x3 given as [[ -3., 5., 15 ], [  0., 6., 14 ], [  6., 3., 11 ]]. How can you perform the quantization on the matrix resulting into an array of {3, 2, 2} bins?  
+A: sklearn.preprocessing.KBinsDiscretizer(n_bins=[3, 2, 2]).fit_transform(matrix)  
+D: sklearn.preprocessing.KDiscretizer(n_bins={3, 2, 2}).fit_transform(matrix)  
+D: sklearn.preprocessing.Discretizer(n_bins={3, 2, 2}).fit_transform(matrix)  
+D: sklearn.preprocessing.NBinsDiscretizer(n_bins=[3, 2, 2]).fit_transform(matrix)  
+
+### Analyze
+Q: 
 
 
 
