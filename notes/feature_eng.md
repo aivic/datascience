@@ -117,9 +117,11 @@ D: Negative log distribution.
 D: No change in distribution.  
 
 ### Understand
-Q: 
-
-
+Q: What is the purpose of using log transformation?  
+A: To remove skewness either right or left from a feature.  
+D: To improve over a sparse feature.  
+D: To fill missing values by interpolation.  
+D: To fill missing values by exterpolation.  
 
 
 
