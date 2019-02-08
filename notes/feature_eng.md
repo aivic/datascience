@@ -101,9 +101,13 @@ D: sklearn.preprocessing.Discretizer(n_bins={3, 2, 2}).fit_transform(matrix)
 D: sklearn.preprocessing.NBinsDiscretizer(n_bins=[3, 2, 2]).fit_transform(matrix)  
 
 ### Analyze
-Q: 
+Q: You need to threshold the numerical features of a dataset given as [[ 1., -1.,  2.], [ 2.,  0.,  0.], [ 0.,  1., -1.]] to boolean values [[1., 0., 1.], [1., 0., 0.], [0., 1., 0.]]. How can you perform it using the discretization process?  
+A: sklearn.preprocessing.Binarizer().fit_transform(features)  
+D: sklearn.preprocessing.Quantizer().fit_transform(features)  
+D: sklearn.preprocessing.FeatureBin().fit_transform(features)  
+D: sklearn.preprocessing.FeatureBinarizer().fit_transform(features)  
 
-
+# Compensating for large scales with log transformations
 
 
 
