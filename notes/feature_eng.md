@@ -109,6 +109,24 @@ D: sklearn.preprocessing.FeatureBinarizer().fit_transform(features)
 
 # Compensating for large scales with log transformations
 
+### Remember
+Q: What is the output distribution, when a log transformation is applied on a log-normal distribution?  
+A: Normal distribution.   
+D: Exponential distribution.  
+D: Negative log distribution.  
+D: No change in distribution.  
+
+### Understand
+Q: 
+
+
+
+
+
+
+
+
+
 
 
 
