@@ -137,7 +137,10 @@ D: 20
 D: 1  
 D: 0  
 
+# Compensating for large scales with power transformations
 
+### Remember
+Q: 
 
 
 
