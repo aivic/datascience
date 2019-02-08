@@ -123,10 +123,19 @@ D: To improve over a sparse feature.
 D: To fill missing values by interpolation.  
 D: To fill missing values by exterpolation.  
 
+### Apply
+Q: You have a matrix given as [[0, 1], [2, 3]]. How can you apply a log transformation on this matrix using Scikit-Learn?  
+A: sklearn.preprocessing.FunctionTransformer(numpy.log1p)  
+D: sklearn.preprocessing.FunctionTransformer(method='log1p')  
+D: sklearn.preprocessing.LogTransformer()  
+D: sklearn.preprocessing.LogTransformer(errors='coerce')  
 
-
-
-
+### Analyze
+Q: A log base 10 transformation is applied on a sample resulting in the arithmetic mean of the log transformed values as 1. What is the geometric mean of the raw data?  
+A: 10  
+D: 20  
+D: 1  
+D: 0  
 
 
 
