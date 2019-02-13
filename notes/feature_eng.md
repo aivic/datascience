@@ -347,19 +347,42 @@ D: Grand mean = 10, Dimension = (16, 5)
 D: Grand mean = 5, Dimension = (9, 4)  
 D: Grand mean = 10, Dimension = (9, 4)  
 
+# Transposing categories to integers using bin counting
+
+### Remember
+Q: 
 
 
 
+# Hashing a nominal feature into a numeric feature
 
+### Remember
+Q: Hashing is a low-memory alternative to which feature extraction algorithm?  
+A: DictVectorizer  
+D: Word2Vec  
+D: Glove    
+D: TFIDF_Vectorizer  
 
+### Understand
+Q: What happens if you provide small number of features while performing hashing?  
+A: It may lead to high number of hash collisions.  
+D: It may decrease the number of hash collisions.  
+D: It may create large coefficient dimensions.  
+D: It may result into the breakdown of the algorithm.  
 
+### Apply
+Q: You have an array of values [{'dog': 1, 'cat':2, 'elephant':4},{'dog': 2, 'run': 5}] which is fed into Scikit-Learn's FeatureHasher(n_features=1) method for preprocessing. What is the dimension of the resultant matrix?  
+A: (2, 1)  
+D: (1, 2)  
+D: (3, 3)  
+D: (5, 3)  
 
-
-
-
-
-
-
+### Analyze
+Q: You have a Pandas series with values ['one', 'five', 'one']. What is the result of the series when the command sklearn.feature_extraction.FeatureHasher(n_features=5).transform(series).toarray() is applied on it?  
+A: Results into an AttributeError.  
+D: Results into a ValueError.  
+D: [[ 1.,  0.,  0.,  0.,  0.], [ 0., -1.,  0.,  0.,  0.], [ 1.,  0.,  0.,  0.,  0.]]  
+D: [[ 1.,  0.,  0.,  0.,  0.], [ 0., 1.,  0.,  0.,  0.], [ 1.,  0.,  0.,  0.,  0.]]  
 
 
 
