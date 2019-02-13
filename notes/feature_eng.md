@@ -167,6 +167,35 @@ D: The NaN values are treated as missing values and maintained by fit method. Th
 D: The NaN values are treated as outliers and maintained by transform method. The lambdas are retrieved using lambdas attribute.  
 D: The NaN values are treated as outliers and maintained by fit method. The lambdas are retrieved using lambdas attribute.  
 
+# Converting nominal data to ordinal data for use in machine learning algorithms
+
+### Remember
+Q: What is a nominal data?  
+A: A data with multiple and unrelated categories.  
+D: A data with multiple and related categories.  
+D: A data with binary and related categories.  
+D: A data with only single category.  
+
+### Understand
+Q: What is the difference between nominal data and ordinal data?  
+A: The former has unrelated categories whereas the latter has related categories.  
+D: The former has related categories whereas the latter has unrelated categories.  
+D: The former deals with only quantitative data whereas the later deals with only qualitative data.  
+D: The former deals with only qualitative data whereas the later deals with only quantitative data.  
+
+### Apply
+Q: You have 10 different classes in a target feature of a dataset. How can you convert this nominal feature into an ordinal class feature?  
+A: Implement pandas.factorize(feature) method to keep an order.  
+D: Implement pandas.Ordinal(feature) method to convert into numeric features.  
+D: Implement pandas.LabelEncoder(feature) method to keep an order.  
+D: Implement pandas.ohe(feature) method to convert into numeric ordered features.   
+
+### Analyze
+Q: You a have dataset with an attribute consisting of numerous unique and unordered classes. What is true about the dimension of this feature once it is converted into an ordinal feature?  
+A: It will have the same dimension as the previous feature with numeric values.  
+D: It will have the same dimension as the previous feature with categorical values.  
+D: It will transform into a feature of dimension MxN, where N is the number of unique classes.  
+D: It will transform into a feature of dimension MxN, where M is the number of unique classes.  
 
 
 
