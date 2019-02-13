@@ -240,8 +240,8 @@ D: Scale features.
 Q: What happens to the result of an one-hot encoder if the number of distinct classes of a target feature increases?  
 A: With an increase in number of distinct classes, the number of output attributes increases.  
 D: With an increase in number of distinct classes, the number of output attributes decreases.  
-D: The result appears in a quantitative continuous data format after crossing a threshold of 200 distinct classes. 
-D: The result appears in a quantitative discrete data format after crossing a threshold of 200 distinct classes. 
+D: The result appears in a quantitative continuous data format after crossing a threshold of 200 distinct classes.  
+D: The result appears in a quantitative discrete data format after crossing a threshold of 200 distinct classes.  
 
 ### Apply
 Q: You have an array of values given as [[5, 1], [5, 3]]. What is the output of this array when one-hot encoding is applied on it?  
@@ -257,12 +257,35 @@ D: [[1., 0., 0., 1., 0., 0.], [0., 0., 1., 0., 0., 1.], [0., 1., 0., 0., 1., 0.]
 D: [[0., 1., 1., 0., 0.], [0., 1., 0., 0., 1.], [1., 0., 0., 1., 0.]]  
 D: [[1., 0., 1., 0., 0.], [0., 1., 0., 0., 1.], [1., 0., 0., 1., 0.]]  
 
+# Reviewing common modeling problems encountered with one-hot encoding
 
+### Remember
+Q: Which encoder is needed as a prerequisite before implementing one-hot encoding on a string data?  
+A: Label.  
+D: Scalar.  
+D: Vector.
+D: Dummy.  
 
+### Understand
+Q: What is true about the issues faced by one-hot encoding?  
+A: The representation size grows with the corpus.  
+D: The correlated attributes are grouped together.  
+D: The resultant matrix size ranges from 0 to n_classes/2.  
+D: No feature can be hand-picked by the user.  
 
+### Apply
+Q: You have taken a sample out of a dataset given as [[5, 1, 0.5], [8, 3, 0.8], [6, 2, 0.1]]. How many new attributes will be created when one-hot encoding is applied on this array?  
+A: 7  
+D: 8  
+D: 9  
+D: 6  
 
-
-
+### Analyze
+Q: You are working in a limited resource environment where you need to encode a categorical feature for further processing. What type of encoder is suitable for this task?  
+A: Label encoder as it will map only existing values of the feature to corresponding discrete values.  
+D: Label encoder as it will map only existing values of the feature to corresponding continuous values.  
+D: One-hot encoder as it will create new feature for every encountered unique class.   
+D: One-hot encoder as it will diminish the feature size by keeping only one class out of all the correlate classes.  
 
 
 
