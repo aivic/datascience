@@ -227,13 +227,35 @@ D: NameError
 D: [1, 0, 3, 2]  
 D: [0, 3, 1, 2]  
 
+# Binarizing categories with one-hot encoding
 
+### Remember
+Q: What is the resultant output of an one-hot encoder?  
+A: Binary features.  
+D: Ratio features.  
+D: Ordinal features.  
+D: Scale features.  
 
+### Understand
+Q: What happens to the result of an one-hot encoder if the number of distinct classes of a target feature increases?  
+A: With an increase in number of distinct classes, the number of output attributes increases.  
+D: With an increase in number of distinct classes, the number of output attributes decreases.  
+D: The result appears in a quantitative continuous data format after crossing a threshold of 200 distinct classes. 
+D: The result appears in a quantitative discrete data format after crossing a threshold of 200 distinct classes. 
 
+### Apply
+Q: You have an array of values given as [[5, 1], [5, 3]]. What is the output of this array when one-hot encoding is applied on it?  
+A: [[1., 1., 0.], [1., 0., 1.]]  
+D: [[1., 0., 1.], [1., 0., 1.]]  
+D: [[1., 0., 1.], [1., 1., 0.]]  
+D: [[0., 1., 0.], [0., 0., 1.]]  
 
-
-
-
+### Analyze
+Q: You have fitted an one-hot encoder on a data given as [[5, 1], [8, 3], [6, 2]]. What is the transformed array when this encoder is implemented on a data with values [[8, 1], [8, 3], [6, 2]]?  
+A: [[0., 0., 1., 1., 0., 0.], [0., 0., 1., 0., 0., 1.], [0., 1., 0., 0., 1., 0.]]  
+D: [[1., 0., 0., 1., 0., 0.], [0., 0., 1., 0., 0., 1.], [0., 1., 0., 0., 1., 0.]]  
+D: [[0., 1., 1., 0., 0.], [0., 1., 0., 0., 1.], [1., 0., 0., 1., 0.]]  
+D: [[1., 0., 1., 0., 0.], [0., 1., 0., 0., 1.], [1., 0., 0., 1., 0.]]  
 
 
 
