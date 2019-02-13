@@ -140,7 +140,35 @@ D: 0
 # Compensating for large scales with power transformations
 
 ### Remember
-Q: 
+Q: Which transformation belongs to power transformation family?  
+A: Box-Cox  
+D: Linpekov  
+D: Square  
+D: Cube  
+
+### Understand
+Q: What is true about the power transformation?  
+A: It is used to stabilize the variance of a feature.  
+D: It degrades the validity of measures of association.  
+D: It makes the data more log-normal distribution-like.  
+D: It makes the data more exponential distribution-like.  
+
+### Apply
+Q: You need to convert the distribution of a feature given as [[40, 2], [3, 20], [4, 50]] to more Gaussian-like. How can you apply a power transformer on the given feature to achieve the task?  
+A: Using the command sklearn.preprocessing.PowerTransformer().fit(feature) and later transforming the features.  
+D: Transforming using the command sklearn.preprocessing.PowerTransformer().transform(feature)  
+D: Using the command sklearn.preprocessing.GaussianTransformer().fit(feature) and later transforming the features.   
+D: Using the command sklearn.preprocessing.GaussianTransformer().fit_transform(feature) to fit and transform the features.   
+
+### Analyze
+Q: You have implemented a power transformation on a data with NaNs using Scikit-Learn. How does NaN values are handled by the transformer and how can you retrieve the lambdas of the fitted transformer?  
+A: The NaN values are treated as missing values and maintained by transform method. The lambdas are retrieved using lambdas_ attribute.  
+D: The NaN values are treated as missing values and maintained by fit method. The lambdas are retrieved using lambdas_ attribute.  
+D: The NaN values are treated as outliers and maintained by transform method. The lambdas are retrieved using lambdas attribute.  
+D: The NaN values are treated as outliers and maintained by fit method. The lambdas are retrieved using lambdas attribute.  
+
+
+
 
 
 
