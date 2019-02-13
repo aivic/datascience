@@ -180,8 +180,8 @@ D: A data with only single category.
 Q: What is the difference between nominal data and ordinal data?  
 A: The former has unrelated categories whereas the latter has related categories.  
 D: The former has related categories whereas the latter has unrelated categories.  
-D: The former deals with only quantitative data whereas the later deals with only qualitative data.  
-D: The former deals with only qualitative data whereas the later deals with only quantitative data.  
+D: The former deals with only quantitative data whereas the latter deals with only qualitative data.  
+D: The former deals with only qualitative data whereas the latter deals with only quantitative data.  
 
 ### Apply
 Q: You have 10 different classes in a target feature of a dataset. How can you convert this nominal feature into an ordinal class feature?  
@@ -263,7 +263,7 @@ D: [[1., 0., 1., 0., 0.], [0., 1., 0., 0., 1.], [1., 0., 0., 1., 0.]]
 Q: Which encoder is needed as a prerequisite before implementing one-hot encoding on a string data?  
 A: Label.  
 D: Scalar.  
-D: Vector.
+D: Vector.  
 D: Dummy.  
 
 ### Understand
@@ -286,6 +286,43 @@ A: Label encoder as it will map only existing values of the feature to correspon
 D: Label encoder as it will map only existing values of the feature to corresponding continuous values.  
 D: One-hot encoder as it will create new feature for every encountered unique class.   
 D: One-hot encoder as it will diminish the feature size by keeping only one class out of all the correlate classes.  
+
+# Compensating for one-hot limitations using a dummy coding
+
+### Remember
+Q: What should be the value of intercept to avoid collinearity while using an unregularized linear model with one-hot encoding?  
+A: False  
+D: True  
+D: Greater than 0  
+D: Less than 0  
+
+### Understand
+Q: What is the difference between applying one-hot encoding and dummy encoding on an attribute with N classes?  
+A: The former converts the attribute into N new attributes whereas the latter converts it into N-1 new attributes.  
+D: The former converts the attribute into N-1 new attributes whereas the latter converts it into N new attributes.  
+D: The former converts the attribute into N+1 new attributes whereas the latter converts it into N new attributes.  
+D: The former converts the attribute into N new attributes whereas the latter converts it into N+1 new attributes.  
+
+### Apply
+Q: You have to produce dummy variables using pandas.get_dummies() using an array with values ['Paris', 'Boston', numpy.nan]. What is the dimension of the resulting dataset?  
+A: (3, 2)  
+D: (3, 3)  
+D: (2, 3)  
+D: (2, 2)  
+
+### Analyze
+Q: You have a dataframe named "df" produced by the command pd.DataFrame({'A': ['a', 'b', 'c'], 'B': ['d', 'e', 'f'], 'C': [1, 2, 3]}). What are the names of the resulted dataframe columns when dummy encoding is applied on "df" by dropping the first level?  
+A: C, A_b, A_c, B_e, B_f  
+D: C, A_a, A_b, A_c, B_d, B_e, B_f  
+D: A_a, A_b, A_c, B_d, B_e, B_f, C_2, C_3, C_1  
+D: A_b, A_c, B_e, B_f, C_2, C_3, C_1  
+
+
+
+
+
+
+
 
 
 
