@@ -350,9 +350,32 @@ D: Grand mean = 10, Dimension = (9, 4)
 # Transposing categories to integers using bin counting
 
 ### Remember
-Q: 
+Q: What is the core principle on which bin counting works?  
+A: Probability theory.  
+D: Hashing.  
+D: Mapping.  
+D: Collisions.  
 
+### Understand
+Q: In bin counting scheme, what happens if a data from a feature doesn't falls into any of the existing bins?  
+A: It is assigned to a garbage bin. 
+D: It is mapped to the last bin.  
+D: It is assigned to a bin with highest number of values.  
+D: It is assigned to a bin with lowest number of values.  
 
+### Apply
+Q: You have applied bin counting scheme on a dataset feature which resulted into 500 bins. How can you visualize the occurences of each bin?  
+A: By using the histogram from the matplotlib package.   
+D: By using the pie chart from the seaborn package.  
+D: By using the scatter plot from the plotly package.  
+D: By using the area chart from the matplotlib package.  
+
+### Analyse
+Q: You are applying a bin counting scheme on a dataset which resulted into 200 bins, some have high occurences whereas some have low occurences. What should be done with the bins with low number of occurences?  
+A: They are merged with the garbage bin.  
+D: They are all merged together.  
+D: They are rejected from the dataset.  
+D: They are kept as individual bins.   
 
 # Hashing a nominal feature into a numeric feature
 
