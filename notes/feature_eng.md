@@ -197,6 +197,47 @@ D: It will have the same dimension as the previous feature with categorical valu
 D: It will transform into a feature of dimension MxN, where N is the number of unique classes.  
 D: It will transform into a feature of dimension MxN, where M is the number of unique classes.  
 
+# Transposing categories to integers using label encoding
+
+### Remember
+Q: What is the range of values encoded using label encoder method?  
+A: Between 0 and n_classes-1  
+D: Between 0 and n_classes  
+D: Between 1 and n_classes-1  
+D: Between 1 and n_classes  
+
+### Understand
+Q: What is true about implementing label encoding in Scikit-Learn?  
+A: It can be implemented on a discrete quantitative data.  
+D: It cannot be implemented on a continuous data.  
+D: It results into a continuous stream of values.   
+D: It results into an alphabetical stream of values.  
+
+### Apply
+Q: You have an array of values given as ['#$%', 'ALpd', '123', 89]. How can you label encode this data using Scikit-Learn method?  
+A: sklearn.preprocessing.LabelEncoder().fit_transform(['#$%', 'ALpd', '123', 89])  
+D: sklearn.preprocessing.LabelEncoder().fit(['#$%', 'ALpd', '123', 89])  
+D: LabelEncoder will result into an error due to the element 89  
+D: LabelEncoder will result into an error due to the element '#$%'  
+
+### Analyze
+Q: You have an array of values ["paris", "zaris", "tokyo", "amsterdam"] used to make a label encoder. What is the result of transform method when an input of values ["paris", "amsterdam", "zari", "tokyo"] is fed into it?  
+A: ValueError  
+D: NameError  
+D: [1, 0, 3, 2]  
+D: [0, 3, 1, 2]  
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
