@@ -317,6 +317,44 @@ D: C, A_a, A_b, A_c, B_d, B_e, B_f
 D: A_a, A_b, A_c, B_d, B_e, B_f, C_2, C_3, C_1  
 D: A_b, A_c, B_e, B_f, C_2, C_3, C_1  
 
+# Compensating for one-hot limitations using an effect coding
+
+### Remember
+Q: What values are used by effect coding?  
+A: 1, 0, -1  
+D: 0, 1  
+D: Between 0 to n_classes-1    
+D: Between 1 to n_classes  
+
+### Understand
+Q: When should you use effect coding in preprocessing task over one-hot encoding?  
+A: When there is a possibility of interaction between two categorical attributes.  
+D: When you need to estimate simple as well as interaction effects.  
+D: When there are large number of distinct classes, possibly more than 1000.  
+D: When there are large number of distinct classes, possibly more than 200.  
+
+### Apply
+Q: You have a dataset with values [[1, 3, 2, 2], [numpy.nan, 3, 4, numpy.nan], [numpy.nan, 6, numpy.nan, 5], [10, 10, 9, 11]]. What is the coefficient of the regression model when you do the standard effect coding on the given dataset?  
+A: 5.25  
+D: 5.5  
+D: 10  
+D: 2.5  
+
+### Analyze
+Q: You need to apply effect coding on a sample dataset with values [[1, 3, 2, 2], [2, 3, 4, 3], [5, 6, 4, 5], [10, 10, 9, 11]] to feed it into a regression model. What is the value of the dataset grand mean and dimension of resultant dataframe except the target attribute?  
+A: Grand mean = 5, Dimension = (16, 4)  
+D: Grand mean = 10, Dimension = (16, 5)  
+D: Grand mean = 5, Dimension = (9, 4)  
+D: Grand mean = 10, Dimension = (9, 4)  
+
+
+
+
+
+
+
+
+
 
 
 
