@@ -142,6 +142,10 @@ D: 1.41
 D: 4.64  
 
 ### Analyze
-Q: 
+Q: You have a dataset with 15 features and a sample size of 200. How can you implement L2 norm on each feaure?  
+A: sklearn.preprocessing.normalize(features, axis=0)  
+D: sklearn.preprocessing.normalize(features, norm='l2', axis=1)  
+D: sklearn.preprocessing.L2Norm(features, axis=0)  
+D: sklearn.preprocessing.L2Norm(features, axis=1)  
 
 
