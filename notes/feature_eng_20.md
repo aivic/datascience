@@ -61,7 +61,42 @@ D: -29
 # Normalizing a data set using max norm
 
 ### Remember
-Q: 
+Q: What is the alternative name of max norm?  
+A: L-infinity norm  
+D: L0 norm  
+D: L1 norm  
+D: L2 norm  
+
+### Understand
+Q: What is true when max norm is used in neural network?  
+A: The network doesn't explodes even if the learning rates are set too high.  
+D: The network may explodes if the learning rates are set too low.  
+D: The updates to the network are not bounded in a confined range.  
+D: The updates to the network are bounded in a range [0, n_features].  
+
+### Apply
+Q: You need to apply a max normalization on an array of values [50, 60, 12, 83, 66, 5]. How can you achieve this task using Scikit-Learn?  
+A: sklearn.preprocessing.normalize(array, norm='max')  
+D: sklearn.preprocessing.MinMaxNormalization(array)  
+D: sklearn.preprocessing.MaxNormalization(array)  
+D: sklearn.preprocessing.SetNorm(array, method='max')  
+
+### Analyse
+Q: You have taken a sample from a feature given as [-6, 4, 2, 5]. What is the max norm of this sample?  
+A: -6  
+D: 5  
+D: 4  
+D: 2  
+
+
+
+
+
+
+
+
+
+
 
 
 
