@@ -88,15 +88,60 @@ D: 5
 D: 4  
 D: 2  
 
+# Normalizing a data set using L1 norm
 
+### Remember
+Q: Which library has inbuilt method to implement L1 norm in python?  
+A: NumPy and Scikit-Learn  
+D: Pandas and Scikit-Learn  
+D: Only NumPy  
+D: Only Pandas  
 
+### Understand
+Q: What is true about L1 norm?  
+A: L1 norm of x equals to the summation of the values of x, if x != 0.  
+D: L1 norm of x equals to the square root of the summation of the values of x, if x != 0.  
+D: ||alpha times x|| = ||alpha|| + ||x||  
+D: ||x + y|| = ||x|| + ||y||, iff x and y are less than 0.    
 
+### Apply
+Q: You have a coordinate vector given as [4, 5]. What is the L1 norm of this vector?  
+A: 9  
+D: 1  
+D: -9  
+D: -1  
 
+### Analyse
+Q: You have a preprocessed Pandas dataframe with 500 quantitative features. How can you implement Lasso regression on this dataset including normalization?  
+A: sklearn.linear_model.Lasso(normalize=True).fit(features)  
+D: sklearn.linear_model.Lasso(normalize=True).fit_transform(features)  
+D: sklearn.linear_model.L1().fit(features)  
+D: sklearn.linear_model.L1(normalize=True).fit(features)  
 
+# Normalizing a data set using L2 norm
 
+### Remember
+Q: How are the unimportant feature coefficients treated by L2 norm?   
+A: They are set closer to zero with same polarity.  
+D: They are set closer to zero with opposite polarity.  
+D: They are merged together to form a new feature.  
+D: They are set to zero leaving no traceback.  
 
+### Understand
+Q: What is true about the property of L2 norm?  
+A: The length of a vector is always greater than 0, unless it is a zero vector.  
+D: The length of a vector is always smaller than 0, unless it is a zero vector.  
+D: The length of the scalar product of a vector is the length of the vector multiplied by the negative value of the scalar.  
+D: The length of the scalar product of a vector is the length of the vector multiplied by the square root of the scalar.  
 
+### Apply
+Q: You have a coordinate system vector given as (3, -2, 1). What is the L2 norm of this vector?  
+A: 3.74  
+D: 2.44  
+D: 1.41  
+D: 4.64  
 
-
+### Analyze
+Q: 
 
 
