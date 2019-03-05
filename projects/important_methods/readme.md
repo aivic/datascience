@@ -8,3 +8,14 @@ This directory holds the most frequently used methods of -
 * Keras
 
 The results are based on methods used in all the answers associated with particular tag on Stack Overflow.
+
+
+R -
+
+install.packages('wordcloud2')
+library(wordcloud2)
+
+df <- read.csv('methods_pandas.csv')
+
+
+wordcloud2(df, size = 2, minRotation = -pi/6, maxRotation = -pi/6, rotateRatio = 1)
