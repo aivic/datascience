@@ -19,3 +19,12 @@ df <- read.csv('methods_pandas.csv')
 
 
 wordcloud2(df, size = 2, minRotation = -pi/6, maxRotation = -pi/6, rotateRatio = 1)
+
+
+SQL -
+
+select OwnerUserId, Id, ParentId, Score, CreationDate, Body 
+  from Posts 
+  where PostTypeId=2
+  and ParentId in 
+    (select PostId from PostTags where TagId=67719)
