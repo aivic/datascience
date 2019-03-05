@@ -10,21 +10,4 @@ This directory holds the most frequently used methods of -
 The results are based on methods used in all the answers associated with particular tag on Stack Overflow.
 
 
-R -
-
-install.packages('wordcloud2')
-library(wordcloud2)
-
-df <- read.csv('methods_pandas.csv')
-
-
-wordcloud2(df, size = 2, minRotation = -pi/6, maxRotation = -pi/6, rotateRatio = 1)
-
-
-SQL -
-
-select OwnerUserId, Id, ParentId, Score, CreationDate, Body 
-  from Posts 
-  where PostTypeId=2
-  and ParentId in 
-    (select PostId from PostTags where TagId=67719)
+Find the complete description of work on [Medium](https://medium.com/@vivekjaglan/frequently-used-functions-of-numpy-pandas-matplotlib-seaborn-scikit-learn-tensorflow-and-keras-a9cb04e2339f)
